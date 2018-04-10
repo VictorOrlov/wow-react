@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: 'Marmelad';
+  font-size: 25px;
+}
+
+.fixed{
+	margin-top: 0px;
+	width: auto;
+	height: 150px;
+	padding-top: 50px;
+	background-image: url(image/headerFone.png);
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.butCont{
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.butHeader{
+	height: 60px;
+	min-height: auto;
+	width: 180px;
+	min-width: auto;
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 30px;
+	padding: auto;
+	border-radius: 10px;
+	background-image: url(image/fireButt.jpg);
+	background-position: -130px -40px;
+	color: white;
+	font-weight: bold;
+}
+
+.butHeader:hover{
+	background-image: url(image/butLich.png);
+	color: #FFF;
+}
+
+
