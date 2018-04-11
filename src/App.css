@@ -1,15 +1,57 @@
-.App {
+.wrapper{
+  margin: 0;
+  padding: 0;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-family: 'Marmelad';
-  font-size: 25px;
+  background-image: url(image/foneGarosch.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+
 }
 
-.fixed{
-	margin-top: 0px;
+/*стиль Домашней страницы*/
+.homeStyle {
+	width: auto;
+	/*color: white;*/
+	/*background-color: rgba(248,176,6,0.6);*/
+ 	text-align: center;
+ 	margin-left: 140px;
+ 	margin-right: 140px;
+ 	padding-bottom: 200px;
+ 	padding-left: 140px;
+ 	padding-right: 140px;
+ 	font-family: 'Marmelad';
+	font-size: 25px;
+ 	width: auto;
+}
+
+.homeStyle > h1 , 
+.homeStyle > p{
+	background-color: rgba(248,176,6,0.7);
+	border-radius: 15px;
+}
+
+
+/*Стиль проффессий*/
+.proffStyled{
+ 	text-align: center;
+ 	height: 100%;
+ 	padding-left: 40px;
+ 	 padding-right: 40px;
+ 	 padding-bottom: 200px;
+  	font-family: 'Marmelad';
+  	font-size: 25px;
+ 	background-image: url(image/foneGarosch.jpg);
+ 	background-attachment: fixed;
+  	-webkit-background-size: auto;
+ 	background-size: cover;
+}
+
+.headerStyled{
+	margin: 0px;
 	width: auto;
 	height: 150px;
+	padding: 0;
 	padding-top: 50px;
 	background-image: url(image/headerFone.png);
 	background-size: cover;

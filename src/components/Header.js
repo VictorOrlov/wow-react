@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 
 function Header(){
 	return(
-		<header className='fixed' >
+		<header className='headerStyled' >
 			<div className='butCont'>
 				<a href="http://localhost:3000/"><button className='butHeader'>Главная</button></a>
 				<button className='butHeader'>Классы героев</button>

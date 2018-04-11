@@ -5,7 +5,7 @@ import Header from './Header';
 class Proff extends Component{
 	render(){
 		return(
-			<div className="app">
+			<div className="proffStyled">
 				<Header />
 				<div>
 					<h1>"Это работает!!!" </h1>
