@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProffFone from '../image/ProffFone.jpg';
 
-import '../App.css';
 import Header from './Header';
+import AllProff from './professions/AllProff'
+
+
 
 const WrappDiv = styled.div`
 	height: 100%;
@@ -31,6 +33,7 @@ const ProffDiv = styled.div`
  	width: auto;
  	min-height: auto;
  	height: 400px;
+ 	overflow-x: hidden;
 `;
 
 const H1 = styled.h1`
@@ -58,10 +61,14 @@ const GridTitle = styled.div`
 `;
 
 
-
-
-
 class Proff extends Component{
+
+	constructor(props){
+		super(props);
+		this.state = {profCont: <AllProff />};
+		}
+
+
 	render(){
 		return(
 			<WrappDiv>
@@ -73,17 +80,7 @@ class Proff extends Component{
 					<P> Безусловно, настоящие профессионалы думают не только о себе и выполняют заказы других игроков, не забывая спрашивать достойную плату.</P>
 				</ProffDiv>
 				<GridTitle>
-					<a href="#"><button className="Alchemy grid-title"> алхимия </button></a>
-					<a href="#"><button className="Mining grid-title"> горное дело </button></a>
-					<a href="#"><button className="Enginering grid-title"> инжинерия </button></a>
-					<a href="#"><button className="Leather grid-title"> кожевничество </button></a>
-					<a href="#"><button className="Blacksmiting grid-title"> кузнечное дело </button></a>
-					<a href="#"><button className="Enchanting grid-title"> наложение чар </button></a>
-					<a href="#"><button className="Inscription grid-title"> начертание </button></a>
-					<a href="#"><button className="Tailoring grid-title"> портняжное дело </button></a>
-					<a href="#"><button className="Skinning grid-title"> снятие шкур </button></a>
-					<a href="#"><button className="Herbalism grid-title"> травничество </button></a>
-					<a href="#"><button className="Jewelcrafting grid-title"> ювелирное дело </button></a>
+					{this.state.profCont}
 				</GridTitle>
 			</WrappDiv>
 			);
