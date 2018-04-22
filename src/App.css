@@ -1,16 +1,6 @@
 
 
 
-/*padding-left: 140px;
-padding-right: 140px;
-*/
-.grid-title{
-
-}
-
-.Alchemy{
-
-}
 
 /*.content{
   width: auto;
@@ -29,27 +19,130 @@ padding-right: 140px;
   display: block;
   /*overflow-x: hidden;*/
 
-
+/*Бокове меню профессий в соотв.разделе*/
 .proffMenu{
-  height: 100%;
+  height: auto;
   width: auto;
-  border: 1px solid black;
   float: left;
   margin: 7px 7px 7px 0;
+
   
 }
 
 .proffMenu > ul{
-  padding-top: 200px;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/*Общие стили кнопок*/
 .menuButton{
-  height: 60px;
-  width: 180px;
+  color: #F0EE0EFF;
+  text-shadow: 1px 1px 1px black,
+               -1px 1px 1px black;
+  height: 100px;
+  width: 380px;
+
+
+  background-color:#6fba26;
+  padding:10px;
+  position:relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size:12px;
+  text-decoration:none;
+  border-radius: 5px;
 }
 .menuButton:focus{
-  background-color: #FE7;
+  top:7px;
+  color: #F3550B;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+
+}
+
+.menuButton::before {
+  /*background-color:#072239;*/
+  content:"";
+  display:block;
+  position:absolute;
+  width:100%;
+  height:100%;
+  padding-left:2px;
+  padding-right:2px;
+  padding-bottom:4px;
+  left:-2px;
+  top:5px;
+  z-index:-1;
+  border-radius: 6px;
+  box-shadow: 0px 1px 0px #fff;
+}
+
+.menuButton:active::before {
+  top:-2px;
+}
+
+.menuButton:hover{
+  border: 2px solid #DBEA14FF;
+}
+
+.menuButton > h3{
+  font-size: 25px;
+}
+
+
+
+
+
+/*отдельные*/
+.butAlchemy{
+  background-image: url(image/alchemy.jpeg);
+}
+
+.butMining{
+  margin-top: 10px;
+  background-image: url(image/mining.jpeg);
+}
+
+.butEngineering{
+  margin-top: 10px;
+  background-image: url(image/engineering.jpeg);
+}
+
+.butLeather{
+  margin-top: 10px;
+  background-image: url(image/leatherworking.jpeg);
+}
+
+.butBlacksmith{
+  margin-top: 10px;
+  background-image: url(image/blacksmith.jpeg);
+}
+
+.butEnchantment{
+  margin-top: 10px;
+  background-image: url(image/enchantment.jpeg);
+}
+
+.butIncsription{
+  margin-top: 10px;
+  background-image: url(image/inscription.jpeg);
+}
+
+.butTailloring{
+  margin-top: 10px;
+  background-image: url(image/tailloring.jpeg);
+}
+
+.butSkinning{
+  margin-top: 10px;
+  background-image: url(image/skinning.jpeg);
+}
+
+.butHerbalism{
+  margin-top: 10px;
+  background-image: url(image/herbalism.jpeg);
+}
+
+.butJevelcrafting{
+  margin-top: 10px;
+  background-image: url(image/jevelcrafting.jpeg);
 }

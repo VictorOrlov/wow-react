@@ -5,6 +5,7 @@ import './index.css';
 
 import Home from './components/Home';
 import Proff from './components/Proff';
+import Classes from './components/Classes';
 import { BrowserRouter, Router, Route, Switch} from 'react-router-dom';
 
 
@@ -14,6 +15,7 @@ ReactDOM.render((
 	<BrowserRouter>
 		<Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/classes" component={Classes} />
             <Route path="/proff" component={Proff} />
          </Switch>
 	</BrowserRouter>

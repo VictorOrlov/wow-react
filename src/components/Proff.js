@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ProffFone from '../image/ProffFone.jpg';
+import ProffFone from '../image/Proff_Fone.jpg';
 
 import Header from './Header';
 import AllProff from './professions/AllProff'
@@ -21,8 +21,10 @@ const WrappDiv = styled.div`
 
 const ProffDiv = styled.div`
 	width: auto;
-	background-color: rgba(248,176,6,0.88);
-	border-radius: 15px;
+	color: white;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	background-color: #00000046;
+	border-radius: 10px;
  	text-align: center;
  	margin-left: 140px;
  	margin-right: 140px;
@@ -47,17 +49,18 @@ const P =styled.p`
 
 const GridTitle = styled.div`
 	width: auto;
+	color: white;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 	background-color: rgba(60,60,60,0.5);
-	border-radius: 15px;
+	border-radius: 2px;
  	text-align: center;
- 	margin-left: 140px;
- 	margin-right: 140px;
  	padding-bottom: 200px;
  	font-family: 'Marmelad';
 	font-size: 25px;
  	width: auto;
  	min-height: auto;
- 	height: 1000px;
+ 	height: 2000px;
+ 	max-height: auto;
 `;
 
 

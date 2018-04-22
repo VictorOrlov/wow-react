@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import headerFone from '../image/headerFone.png';
+import headerFone from '../image/header_fone.jpg';
 import fireButt from '../image/fireButt.jpg';
 import butLich from '../image/butLich.png';
 
@@ -9,34 +9,34 @@ const HeadStyle = styled.header`
 	width: auto;
 	height: 150px;
 	padding: 0;
-	padding-top: 50px;
+	padding-top: 5%;
 	background-image: url(${headerFone});
-	background-size: cover;
-	border-radius: 10px;
+	background-size: contain;
+	background-repeat: no-repeat;
 	text-align: center;
+	display: block;
 `;
 
 const ButtDiv = styled.div`
-	width: 1200px;
-	margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
+	width: auto;
+	min-width: auto;
+	margin-left: 22.5%;
+    margin-right: 22.5%;
+    background-color: #86F509FF;
+    display: block;
 `;
 
 const Button = styled.button`
-	height: 60px;
-	min-height: auto;
-	width: 180px;
-	min-width: auto;
-	margin-left: auto;
-    margin-right: auto;
-	margin-top: 30px;
+	height: 45px;
+	width: 20%;
+	min-width: 15px;
 	padding: auto;
-	border-radius: 10px;
+	border-radius: 6px;
 	background-image: url(${fireButt});
 	background-position: -130px -40px;
 	color: white;
 	font-weight: bold;
+	float:left;
 
 	&:hover{
 			background-image: url(${butLich});
@@ -46,13 +46,14 @@ const Button = styled.button`
 
 
 
+
 class Header extends Component{
 	render(){
 	return(
 		<HeadStyle >
 			<ButtDiv>
 				<a href="http://localhost:3000/"><Button>Главная</Button></a>
-				<Button>Классы героев</Button>
+				<a href="http://localhost:3000/classes"><Button>Классы героев</Button></a>
 				<a href="http://localhost:3000/proff"><Button>Профессии</Button></a>
 				<Button>Рейды</Button>
 				<Button>Маунты</Button>
