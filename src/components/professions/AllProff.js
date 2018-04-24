@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../styles/Proff.css';
 import AllProfText from './AllProfText';
 import Blacksmith from './Blacksmith';
 import Enchantment from './Enchantment';
@@ -11,7 +12,7 @@ import Mining from './Mining';
 import Skinning from './Skinning';
 import Tailloring from './Tailloring';
 import Alchemy from './Alchemy';
-import '../../App.css';
+
 
 
 
@@ -104,13 +105,13 @@ class AllProff extends Component{
     });     
   }
 
-
+ 
 
     
   render(){
     return(
       <div >
-        <div className="content">
+        <div >
           <div className="proffMenu">
             <ul>
               <li><button onClick={this.handlyClickAlchemy} className="menuButton butAlchemy"> <h3>Алхимия</h3> </button></li>

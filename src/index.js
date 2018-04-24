@@ -1,21 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
 
 import Home from './components/Home';
 import Proff from './components/Proff';
 import Classes from './components/Classes';
+import Warrior from './components/classes/Warrior';
 import { BrowserRouter, Router, Route, Switch} from 'react-router-dom';
 
 
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
-	<BrowserRouter>
+	<BrowserRouter >
 		<Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/classes" component={Classes} />
+            // Классы и его ветви
+            <Route exact path="/classes" component={Classes} />
+            <Route path="/classes/warrior" component={Warrior} />
+            
+            // Профессии
             <Route path="/proff" component={Proff} />
          </Switch>
 	</BrowserRouter>

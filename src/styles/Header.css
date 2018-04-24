@@ -1,0 +1,39 @@
+header{
+	margin: 0px;
+	width: auto;
+	height: 150px;
+	padding: 0;
+	padding-top: 5%;
+	background-image: url(../image/bg_Header/header_fone.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	display: block;
+}
+
+.ButtDiv {
+	width: auto;
+	min-width: auto;
+	margin-left: 22.5%;
+    margin-right: 22.5%;
+    background-color: #86F509FF;
+    display: block;
+}
+
+.buttonHeader{
+	height: 45px;
+	width: 20%;
+	min-width: 15px;
+	padding: auto;
+	border-radius: 6px;
+	background-image: url(../image/bg_Header/fireButt.jpg);
+	background-position: -130px -40px;
+	color: white;
+	font-weight: bold;
+	float:left;
+}
+
+.buttonHeader:hover{
+	background-image: url(../image/bg_Header/butLich.png);
+	color: #FFF;
+	}

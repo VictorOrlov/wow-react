@@ -1,0 +1,11 @@
+.wrappClassesDiv{
+	height: 1000px;
+	min-height: auto;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-image: url(../image/bg_Classes/warrior.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}

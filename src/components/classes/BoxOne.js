@@ -1,57 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import '../../styles/Classes.css';
 
-
-const A = styled.a`
-	text-decoration: none;
-	color: black;
-	
-`;
-
-const H3 = styled.h1`
-	color: #E5E5E5E0;
-`;
-const P =styled.p`
-	color: #E5E5E5B1;
-`;
-
-
-const ContInner= styled.div`
-	color: white;
-	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
-	width: 99%;
-	height: 20%;
-	margin: 0px auto;
-	margin-bottom: 17px;
-	background-color: #2B1C02FF;
-	display: block;
-	border: 2px solid #924715FF;
-
-	&:hover{
-		border: 2px solid #E0DC1EFF;
-		color:#E99415FF;
-	}
-`;
-
-const ImgTablet = styled.div`
-	height: 100%;
-	width: 35%;
-	float: left;
-	display: block;
-	border-right: 2px solid #924715FF;
-
-	&> img{
-		height: 100%;
-		width: 100%
-	}
-`;
-
-const TextTablet = styled.div`
-	height: 100%;
-	width: 64%;
-	float: left;
-	display: block;
-`;
 
 class BoxOne extends Component {
 
@@ -59,7 +8,7 @@ class BoxOne extends Component {
 		let data = {
 		tablet:[
 		{	id: 0, 
-			link: ' ', 
+			link: '/classes/warrior', 
 			img: <img src = {require ('../../image/ClassesTablet/warriortablet.jpg')} />, 
 			caption: 'Воин',
 			text: 'В годы войны герои каждого из народов желали овладеть искусством боя. Воины сильны, обладают отличными лидерскими качествами и прекрасно умеют обращаться с оружием и доспехами...'
@@ -102,17 +51,17 @@ class BoxOne extends Component {
 			<span>
 				{data.tablet.map((msg, id)=>{
 					return(
-						<A key={msg.id} href={msg.link}>
-						<ContInner>
-							<ImgTablet>
+						<a key={msg.id} href={msg.link}>
+						<div className="classesContainer">
+							<div className="imageDivTablet">
 								{msg.img}
-							</ImgTablet>
-							<TextTablet>
-								<H3>{msg.caption}</H3>
-								<P>{msg.text}</P>
-							</TextTablet>
-						</ContInner>
-						</A>
+							</div>
+							<div className="textDivTablet">
+								<h3>{msg.caption}</h3>
+								<p>{msg.text}</p>
+							</div>
+						</div>
+						</a>
 					);
 				})}
 			</span>
