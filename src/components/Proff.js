@@ -16,7 +16,7 @@ class Proff extends Component{
 
 	render(){
 		return(
-			<div className="wrappDiv">
+			<div className="wrappProffDiv">
 				<Header />
 				<div className="ProffDiv">
 					<h1>"Профессии" </h1>

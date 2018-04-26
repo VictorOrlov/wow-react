@@ -1,11 +1,256 @@
+/*Общий стиль странницы*/
 .wrappClassesDiv{
-	height: 1000px;
+	height: 2000px;
 	min-height: auto;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-image: url(../image/bg_Classes/warrior.jpg);
 	background-attachment: fixed;
 	-webkit-background-size: auto;
 	background-size: cover;
+} 
+
+/*основной background для каждого из классов*/
+.bg_warrior{
+	background-image: url(../image/bg_Classes/warrior1.jpg);
+}
+
+.bg_hunter{
+	background-image: url(../image/bg_Classes/hunter.jpg);
+}
+
+.bg_priest{
+	background-image: url(../image/bg_Classes/priest.jpg);
+}
+
+.bg_sham{
+	background-image: url(../image/bg_Classes/shaman.jpg);
+}
+
+.bg_warloc{
+	background-image: url(../image/bg_Classes/warlock.jpg);
+}
+
+.bg_druid{
+	background-image: url(../image/bg_Classes/druid.jpg);
+}
+
+.bg_paladin{
+	background-image: url(../image/bg_Classes/paladin.jpg);
+}
+
+.bg_rogue{
+	background-image: url(../image/bg_Classes/rogue.jpg);
+}
+
+.bg_dk{
+	background-image: url(../image/bg_Classes/DK.jpg);
+}
+
+.bg_mage{
+	background-image: url(../image/bg_Classes/mage.jpg);
+}
+
+.bg_monk{
+	background-image: url(../image/bg_Classes/monk.jpg);
+}
+
+
+
+/*Блок под шапкой*/
+.captionDiv{
+	margin-top: -25px;
+	text-align: center;
+	color: #FFFFFFFF;
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+	font-size: 22px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+}
+.captionDiv> h4{
+	color: #D1C1C1FF;
+}
+.captionDiv> a> button{
+	margin-top: -60px;
+	margin-right: 13%;
+	float: right;
+	background-color:#6fba26;
+	padding:10px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
+	box-shadow: inset 0px 1px 0px #b2f17f, 0px 6px 0px #3d6f0d;
+	border-radius: 5px;
+}
+.captionDiv> a> button:active {
+	top:7px;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+	color: #156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background: rgb(44,160,202);
+}
+.captionDiv> a> button::before {
+	background-color:#072239;
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:4px;
+	left:-2px;
+	top:5px;
+	z-index:-1;
+	border-radius: 6px;
+	box-shadow: 0px 1px 0px #fff;
+}
+
+.captionDiv> a> button:active::before {
+	top:-2px;
+}
+
+/*Левый блок с контентом*/
+.heroDesc{
+	height: 1000px;
+	width: 400px;
+	color: #FFFFFFFF;
+	text-align: left;
+	float: left;
+	margin-top: 5%;
+	margin-left: 30px;
+	padding: 0 3%;
+	display: inline-block;
+	background-color: rgba(64, 64, 64, .5686274509803921);
+}
+
+/*правый блок. общие настройки*/
+.paperDesc{
+	height: 1000px;
+	width: 400px;
+	float: right;
+	padding-top: 21%;
+	padding-left: 3%;
+	margin-right: 30px;
+	display: inline-block;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.paperDesc> span{
+	text-align: left;
+	
+}
+
+.paperDesc> h3{
+	text-indent: -30px;
+}
+
+.paperDesc> span>p{
+	font-size: 14px;
+}
+
+/*Настройки пр.блока под каждый класс*/
+
+.pabg_warrior{
+	background-image: url(../image/bg_Classes/paper_bg/paperWarrior.png);
+}
+.pabg_warrior> h3, 
+.pabg_warrior> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_hunter{
+	background-image: url(../image/bg_Classes/paper_bg/paperHunter.png);
+}
+.pabg_hunter> h3, 
+.pabg_hunter> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_priest{
+	background-image: url(../image/bg_Classes/paper_bg/paperPrist.png);
+}
+.pabg_priest> h3, 
+.pabg_priest> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_sham{
+	background-image: url(../image/bg_Classes/paper_bg/paperSham.png);
+}
+.pabg_sham> h3, 
+.pabg_sham> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_warloc{
+	background-image: url(../image/bg_Classes/paper_bg/paperWarloc.png);
+}
+.pabg_warloc> h3, 
+.pabg_warloc> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_druid{
+	background-image: url(../image/bg_Classes/paper_bg/paperDruid.png);
+}
+.pabg_druid> h3, 
+.pabg_druid> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_paladin{
+	background-image: url(../image/bg_Classes/paper_bg/paperPaladin.png);
+}
+.pabg_paladin> h3, 
+.pabg_paladin> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_rogue{
+	background-image: url(../image/bg_Classes/paper_bg/paperRogue.png);
+}
+.pabg_rogue> h3, 
+.pabg_rogue> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_dk{
+	background-image: url(../image/bg_Classes/paper_bg/paperDK.png);
+}
+.pabg_dk> h3, 
+.pabg_dk> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_mage{
+	background-image: url(../image/bg_Classes/paper_bg/paperMage.png);
+}
+.pabg_mage> h3, 
+.pabg_mage> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_monk{
+	background-image: url(../image/bg_Classes/paper_bg/paperMonk.png);
+}
+.pabg_monk> h3, 
+.pabg_monk> span> h4{
+	color: #1E346BFF;
 }

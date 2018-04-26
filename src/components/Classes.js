@@ -9,7 +9,7 @@ import BoxTwo from './classes/BoxTwo.js';
 class Classes extends Component{
 	render(){
 		return(
-			<div className="wrappDiv">
+			<div className="wrappClassDiv">
 				<Header />
 				<div className="textDiv">
 					<h2>Классы</h2>

@@ -7,7 +7,7 @@ import Header from './Header';
 class Home extends Component {
 	render(){
 		return(
-		<div className="wrappDiv">
+		<div className="wrappHomeDiv">
 		 	<Header />
 		 	<div className="contentHome">
         		<h1>World of Warcraft</h1>
