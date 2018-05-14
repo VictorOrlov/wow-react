@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
+import BootstrapTheme from 'bootstrap/dist/css/bootstrap-theme.css';
 
 import Home from './components/Home';
 import Proff from './components/Proff';

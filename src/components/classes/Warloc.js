@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Warloc extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_warloc">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_warloc">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Чернокнижник</h2>
 					<h4>Боец</h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Запретные силы</h4>
 					<p>Перед лицом демонов большинство героев видят смерть. 
 					Чернокнижники видят огромные возможности. Их цель — 
@@ -41,9 +48,11 @@ class Warloc extends Component{
 						<li><strong>Броня</strong><br/>Ткань</li><br/>
 						<li><strong>Оружие</strong><br/>Кинжалы, одноручные мечи, посохи, жезлы</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_warloc">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_warloc">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Призыв</h4>
@@ -72,8 +81,9 @@ class Warloc extends Component{
 						стремительными и смертоносными.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Rogue extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_rogue">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_rogue">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Разбойник</h2>
 					<h4>Боец  </h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Скрытные преступники</h4>
 					<p>Честь разбойника можно купить за золото, а единственный кодекс, 
 					которому он следует, — контракт. Наемники не мучаются угрызениями 
@@ -40,9 +47,11 @@ class Rogue extends Component{
 						<li><strong>Броня</strong><br/>Кожа</li><br/>
 						<li><strong>Оружие</strong><br/>Кинжалы, кистевое оружие, одноручные топоры, одноручное дробящее, одноручные мечи</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_rogue">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_rogue">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Ближний бой</h4>
@@ -70,8 +79,9 @@ class Rogue extends Component{
 						завершающий удар поистине сокрушительным. 
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

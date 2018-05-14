@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Priest extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_priest">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_priest">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Жрец</h2>
 					<h4>Лекарь, боец</h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Хранители Света и Тьмы</h4>
 					<p>Жрецы посвящают себя духовной жизни и доказывают 
 					крепость веры, служа своему народу. 
@@ -40,9 +47,11 @@ class Priest extends Component{
 						<li><strong>Броня</strong><br/>Ткань</li><br/>
 						<li><strong>Оружие</strong><br/>Кинжалы, одноручное дробящее, посохи, жезлы</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_priest">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_priest">
 					<h3>Особенности</h3>
 					<span>
 						<h4> Лечение </h4>
@@ -72,8 +81,9 @@ class Priest extends Component{
 						и умения жертв.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

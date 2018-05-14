@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Hunter extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_hunter">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_hunter">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Охотник</h2>
 					<h4>Боец  </h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Неумолимые преследователи</h4>
 					<p>Зов природы звучит с незапамятных времен. 
 					Те, кто слышит его, готовы променять домашний уют на вольную, 
@@ -38,9 +45,11 @@ class Hunter extends Component{
 						<li><strong>Броня</strong><br/>Кольчуга</li><br/>
 						<li><strong>Оружие</strong><br/>Луки, арбалеты, ружья, древковое</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_hunter">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_hunter">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Ближний бой</h4>
@@ -71,8 +80,9 @@ class Hunter extends Component{
 						повышать свой уровень, действуя в одиночку.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

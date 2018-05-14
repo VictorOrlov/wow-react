@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
+
 import '../../styles/Proff.css';
 import AllProfText from './AllProfText';
 import Blacksmith from './Blacksmith';
@@ -105,30 +107,33 @@ class AllProff extends Component{
     });     
   }
 
- 
+
 
     
   render(){
     return(
       <div >
-        <div >
-          <div className="proffMenu">
-            <ul>
-              <li><button onClick={this.handlyClickAlchemy} className="menuButton butAlchemy"> <h3>Алхимия</h3> </button></li>
-              <li><button onClick={this.handlyClickMining} className="menuButton butMining"> <h3>Горное дело</h3> </button></li>
-              <li><button onClick={this.handlyClickEngineering} className="menuButton butEngineering"> <h3>Инженерное дело</h3> </button></li>
-              <li><button onClick={this.handlyClickLeather} className="menuButton butLeather"> <h3>Кожевничество</h3> </button></li>
-              <li><button onClick={this.handlyClickBlacksmith} className="menuButton butBlacksmith"> <h3>Кузнечное Дело</h3> </button></li>
-              <li><button onClick={this.handlyClickEnchantment} className="menuButton butEnchantment"> <h3>Наложение чар</h3> </button></li>
-              <li><button onClick={this.handlyClickInscription} className="menuButton butIncsription"> <h3>Начертание</h3> </button></li>
-              <li><button onClick={this.handlyClickTailloring} className="menuButton butTailloring"> <h3>Портняжное дело</h3> </button></li>
-              <li><button onClick={this.handlyClickSkinning} className="menuButton butSkinning"> <h3>Снятие шкур</h3> </button></li>
-              <li><button onClick={this.handlyClickHerbalism} className="menuButton butHerbalism"> <h3>Травничество</h3> </button></li>
-              <li><button onClick={this.handlyClickJevelcrafting} className="menuButton butJevelcrafting"> <h3>Ювелирное дело</h3> </button></li>
-            </ul>
-          </div>
-          {this.state.welcome}
-        </div>
+        <Row >
+          <Col className="proffMenu" md={3} xs={6} >
+            <ListGroup>
+              <ListGroupItem onClick={this.handlyClickAlchemy} className="butAlchemy but"> <h4 >Алхимия</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickMining} className="butMining but"> <h4>Горное дело</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickEngineering} className="butEngineering but"> <h4>Инженерное дело</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickLeather} className="butLeather but"> <h4>Кожевничество</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickBlacksmith} className="butBlacksmith but"> <h4>Кузнечное Дело</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickEnchantment} className="butEnchantment but"> <h4>Наложение чар</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickInscription} className="butIncsription but"> <h4>Начертание</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickTailloring} className="butTailloring but"> <h4>Портняжное дело</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickSkinning} className="butSkinning but"> <h4>Снятие шкур</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickHerbalism} className="butHerbalism but"> <h4>Травничество</h4> </ListGroupItem>
+              <ListGroupItem onClick={this.handlyClickJevelcrafting} className="butJevelcrafting but"> <h4>Ювелирное дело</h4></ListGroupItem>
+            </ListGroup>
+          </Col>
+
+          <Col md={9} xs={6} >
+            {this.state.welcome}
+          </Col>
+        </Row>
       </div>
       );
   }

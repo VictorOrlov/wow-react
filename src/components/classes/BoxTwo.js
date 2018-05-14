@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/Classes.css';
-
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 
 class BoxTwo extends Component {
 
@@ -46,15 +46,17 @@ class BoxTwo extends Component {
 				{data.tablet.map((msg, id)=>{
 					return(
 						<a key={msg.id} href={msg.link}>
-						<div className="classesContainer">
-							<div className="imageDivTablet">
-								{msg.img}
-							</div>
-							<div className="textDivTablet">
-								<h3>{msg.caption}</h3>
-								<p>{msg.text}</p>
-							</div>
-						</div>
+						<Col md={12} className="classesContainer">
+							<Row>
+								<Col md={4} sm={4} xs={12} className="imageDivTablet">
+									{msg.img}
+								</Col>
+								<Col md={8} sm={8} xs={12} className="textDivTablet">
+									<h3>{msg.caption}</h3>
+									<p>{msg.text}</p>
+								</Col>
+							</Row>	
+						</Col>
 						</a>
 					);
 				})}

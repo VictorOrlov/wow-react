@@ -1,59 +1,90 @@
 /*Общий стиль странницы*/
 .wrappClassesDiv{
+	width: 100%;
 	height: 2000px;
 	min-height: auto;
 	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-attachment: fixed;
-	-webkit-background-size: auto;
-	background-size: cover;
 } 
 
 /*основной background для каждого из классов*/
 .bg_warrior{
 	background-image: url(../image/bg_Classes/warrior1.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_hunter{
-	background-image: url(../image/bg_Classes/hunter.jpg);
+	background-image: url(../image/bg_Classes/testHunt.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_priest{
 	background-image: url(../image/bg_Classes/priest.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_sham{
 	background-image: url(../image/bg_Classes/shaman.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_warloc{
-	background-image: url(../image/bg_Classes/warlock.jpg);
+	background-image: url(../image/bg_Classes/testWarloc2.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_druid{
 	background-image: url(../image/bg_Classes/druid.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_paladin{
 	background-image: url(../image/bg_Classes/paladin.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_rogue{
 	background-image: url(../image/bg_Classes/rogue.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_dk{
 	background-image: url(../image/bg_Classes/DK.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_mage{
 	background-image: url(../image/bg_Classes/mage.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 .bg_monk{
 	background-image: url(../image/bg_Classes/monk.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
 }
 
 
@@ -63,7 +94,6 @@
 	margin-top: -25px;
 	text-align: center;
 	color: #FFFFFFFF;
-	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 	font-size: 22px;
 	text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
 }
@@ -116,27 +146,18 @@
 
 /*Левый блок с контентом*/
 .heroDesc{
-	height: 1000px;
-	width: 400px;
 	color: #FFFFFFFF;
 	text-align: left;
-	float: left;
-	margin-top: 5%;
 	margin-left: 30px;
-	padding: 0 3%;
-	display: inline-block;
 	background-color: rgba(64, 64, 64, .5686274509803921);
 }
 
 /*правый блок. общие настройки*/
 .paperDesc{
-	height: 1000px;
-	width: 400px;
 	float: right;
 	padding-top: 21%;
 	padding-left: 3%;
 	margin-right: 30px;
-	display: inline-block;
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Druid extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_druid">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_druid">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Друид</h2>
 					<h4>Танк, лекарь, боец</h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Непокоренные оборотни</h4>
 					<p>Друиды подчиняют себе силы природы, чтобы сберечь естественное 
 					равновесие и защитить окружающий мир. Опытный друид способен 
@@ -37,9 +44,11 @@ class Druid extends Component{
 						<li><strong>Броня</strong><br/>Кожа</li><br/>
 						<li><strong>Оружие</strong><br/>Кинжалы, кистевое оружие, дробящее оружие, древковое оружие, посохи</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_druid">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_druid">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Защита</h4>
@@ -68,8 +77,9 @@ class Druid extends Component{
 						дает возможность быстро передвигаться по суше, морю и воздуху. 
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

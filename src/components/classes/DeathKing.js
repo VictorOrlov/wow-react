@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -6,24 +7,29 @@ import Header from '../Header';
 
 class DeathKing extends Component{
 
-	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_dk">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_dk">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Рыцарь смерти</h2>
 					<h4>Танк, боец</h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Наследие рока</h4>
 					<p>Когда Король-лич потерял контроль над рыцарями смерти, 
 					его бывшие приспешники пожелали отомстить за весь ужас, 
 					сотворенный по его приказу. После отмщения рыцари смерти 
 					казались неприкаянными, потеряв все: и дом, и смысл жизни. 
 					Один за другим они проникали на земли живых в поисках 
-					новой цели.  </p><br/>
+					новой цели.</p><br/>
 
 					<h4>Описание</h4>
 					<p>Рыцари смерти сходятся с противником в ближнем бою, 
@@ -41,9 +47,11 @@ class DeathKing extends Component{
 						<li><strong>Броня</strong><br/>Латы</li><br/>
 						<li><strong>Оружие</strong><br/>Топоры, дробящее, мечи, древковое</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_dk">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_dk">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Защита</h4>
@@ -65,8 +73,9 @@ class DeathKing extends Component{
 						на них руны, увеличивая силу оружия.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

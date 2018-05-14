@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Mage extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_mage">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_mage">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Маг</h2>
 					<h4>Боец  </h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Повелители времени и пространства</h4>
 					<p>Дисциплинированные ученики, наделенные острым умом, 
 					могут избрать путь мага. Тайное волшебство, доступное 
@@ -41,9 +48,11 @@ class Mage extends Component{
 						<li><strong>Броня</strong><br/>Ткань</li><br/>
 						<li><strong>Оружие</strong><br/>Жезлы, кинжалы, одноручные мечи, посохи</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_mage">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_mage">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Урон в дальнем бою</h4>
@@ -71,8 +80,9 @@ class Mage extends Component{
 						создавать пищу и воду, где бы они ни находились.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

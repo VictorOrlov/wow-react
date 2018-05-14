@@ -1,9 +1,6 @@
 .wrappProffDiv {
-	height: 100%;
-	min-height: auto;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+	
+	/*text-align: center;*/
 	background-image: url(../image/Proff_Fone.jpg);
 	background-attachment: fixed;
 	-webkit-background-size: auto;
@@ -12,20 +9,12 @@
 
 /*Блок отображения текста*/
 .ProffDiv{
-	width: auto;
 	color: white;
+  text-align: center;
 	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 	background-color: #00000046;
 	border-radius: 10px;
- 	text-align: center;
- 	margin-left: 140px;
- 	margin-right: 140px;
- 	padding-left: 140px;
- 	padding-right: 140px;
- 	font-family: 'Marmelad';
-	font-size: 25px;
- 	min-height: auto;
- 	height: 400px;
+	font-size: bold;
  	overflow-x: hidden;
 }
 
@@ -35,96 +24,32 @@
 }
 
 /*Меню профессий*/
+.ProffMenu{
+  color: white;
+}
+
 .GridTitle {
 	width: auto;
 	color: white;
 	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
 	background-color: rgba(60,60,60,0.5);
 	border-radius: 2px;
- 	text-align: center;
  	padding-bottom: 200px;
- 	font-family: 'Marmelad';
-	font-size: 25px;
  	width: auto;
- 	min-height: auto;
- 	height: 2000px;
- 	max-height: auto;
 }
 /*______________________________________________________________________________________*/
 
-/*Бокове меню профессий */
-.proffMenu{
-  height: auto;
-  width: auto;
-  float: left;
-  margin: 7px 7px 7px 0;
-
-  
-}
-
-.proffMenu > ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/*Общие стили кнопок*/
-.menuButton{
-  color: #F0EE0EFF;
-  text-shadow: 1px 1px 1px black,
-               -1px 1px 1px black;
-  height: 100px;
-  width: 380px;
-
-
-  background-color:#6fba26;
-  padding:10px;
-  position:relative;
-  font-family: 'Open Sans', sans-serif;
-  font-size:12px;
-  text-decoration:none;
-  border-radius: 5px;
-}
-.menuButton:focus{
-  top:7px;
-  color: #F3550B;
-  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
-
-}
-
-.menuButton::before {
-  /*background-color:#072239;*/
-  content:"";
-  display:block;
-  position:absolute;
-  width:100%;
-  height:100%;
-  padding-left:2px;
-  padding-right:2px;
-  padding-bottom:4px;
-  left:-2px;
-  top:5px;
-  z-index:-1;
-  border-radius: 6px;
-  box-shadow: 0px 1px 0px #fff;
-}
-
-.menuButton:active::before {
-  top:-2px;
-}
-
-.menuButton:hover{
-  border: 2px solid #DBEA14FF;
-}
-
-.menuButton > h3{
-  font-size: 25px;
-}
-
 /*отдельные*/
+.but>h4{
+  color:#F5CC18FF;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+
+
 .butAlchemy{
   background-image: url(../image/bg_tabletProfs/alchemy.jpeg);
 }
+
 
 .butMining{
   margin-top: 10px;
@@ -174,4 +99,16 @@
 .butJevelcrafting{
   margin-top: 10px;
   background-image: url(../image/bg_tabletProfs/jevelcrafting.jpeg);
+}
+
+@media screen and (max-width: 800px) {
+   * {font-size: 10px;}
+}
+
+@media screen and (max-width: 1024px) {
+   * {font-size: 14px;}
+}
+
+@media screen and (max-width: 1920px) {
+   * {font-size: 16px;}
 }

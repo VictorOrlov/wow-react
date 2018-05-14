@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Paladin extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_paladin">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_paladin">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Паладин</h2>
 					<h4>Танк, лекарь, боец</h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Оплот справедливости</h4>
 					<p>Призвание паладина — защищать слабых, карать злодеев 
 					и изгонять зло из самых темных уголков мира. В бою эти 
@@ -38,9 +45,11 @@ class Paladin extends Component{
 						<li><strong>Броня</strong><br/>Латы, щиты</li><br/>
 						<li><strong>Оружие</strong><br/>Топоры, дробящее, мечи, древковое</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_paladin">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_paladin">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Танк</h4>
@@ -69,8 +78,9 @@ class Paladin extends Component{
 						повысить выживаемость и для них самих, и для их союзников.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}

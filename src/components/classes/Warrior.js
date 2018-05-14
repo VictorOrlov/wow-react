@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -9,14 +10,20 @@ class Warrior extends Component{
 	
 	render(){
 		return(
-			<div className="wrappClassesDiv bg_warrior">
-				<Header />
-				<div className="captionDiv">
+			<div className="bg_warrior">
+			<Header />
+			<Grid className="wrappClassesDiv">
+				<Row>
+				<Col md={12} className="captionDiv">
 					<h2>Воин</h2>
 					<h4>Танк, боец</h4>
 					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-				</div>
-				<div className="heroDesc">
+					
+				<br/>
+				<br/>
+				<br/>
+				</Col>
+				<Col md={4} className="heroDesc">
 					<h4>Мастера войны</h4>
 					<p>В годы войны герои каждого из народов желали овладеть искусством боя. 
 					Воины сильны, обладают отличными лидерскими качествами и прекрасно 
@@ -41,9 +48,11 @@ class Warrior extends Component{
 						<li><strong>Броня</strong><br/>Латы, щиты</li><br/>
 						<li><strong>Оружие</strong><br/>Кинжалы, кистевое оружие, топоры, дробящее, мечи, древковое оружие, посохи</li><br/>
 					</ul>
-				</div>
+				</Col>
 
-				<div className="paperDesc pabg_warrior">
+				<Col md={4} ></Col>
+
+				<Col md={4} className="paperDesc pabg_warrior">
 					<h3>Особенности</h3>
 					<span>
 						<h4>Защита</h4>
@@ -65,8 +74,9 @@ class Warrior extends Component{
 						позволяя в разгар битвы наносить поистине сокрушительные удары.
 						</p><br/>
 					</span>
-				</div>
-
+				</Col>
+				</Row>
+			</Grid>
 			</div>
 			);
 	}
