@@ -50,7 +50,7 @@ class Header extends Component{
               </NavItem>
               <NavItem eventKey={4} href="http://localhost:3000/races">
                <span className="hover-underline-animation">
-                Рассы
+                Расы
                 </span>
               </NavItem>
               <NavDropdown eventKey={5} title="Прочее" id="basic-nav-dropdown">
