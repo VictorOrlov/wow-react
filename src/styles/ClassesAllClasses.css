@@ -100,49 +100,27 @@
 .captionDiv> h4{
 	color: #D1C1C1FF;
 }
-.captionDiv> a> button{
-	margin-top: -60px;
+
+.btnStyle{
+	margin-top: 35px;
 	margin-right: 13%;
 	float: right;
-	background-color:#6fba26;
-	padding:10px;
-	position:relative;
-	font-family: 'Open Sans', sans-serif;
-	font-size:12px;
-	text-decoration:none;
 	color:#fff;
-	background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
-	box-shadow: inset 0px 1px 0px #b2f17f, 0px 6px 0px #3d6f0d;
+	background-image: url(../image/bg_Classes/Wow_Banner_1.png);
+	background-color:transparent;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border: none;
 	border-radius: 5px;
 }
-.captionDiv> a> button:active {
-	top:7px;
-	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
-	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
-	color: #156785;
-	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
-	background: rgb(44,160,202);
-}
-.captionDiv> a> button::before {
-	background-color:#072239;
-	content:"";
-	display:block;
-	position:absolute;
-	width:100%;
-	height:100%;
-	padding-left:2px;
-	padding-right:2px;
-	padding-bottom:4px;
-	left:-2px;
-	top:5px;
-	z-index:-1;
-	border-radius: 6px;
-	box-shadow: 0px 1px 0px #fff;
+
+.btnStyle>p{
+	padding: 5%;
+  display: table-cell;
+  vertical-align: bottom;
 }
 
-.captionDiv> a> button:active::before {
-	top:-2px;
-}
 
 /*Левый блок с контентом*/
 .heroDesc{
@@ -158,6 +136,7 @@
 	padding-top: 21%;
 	padding-left: 3%;
 	margin-right: 30px;
+	margin-left: 5px;
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;

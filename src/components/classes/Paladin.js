@@ -17,7 +17,7 @@ class Paladin extends Component{
 				<Col md={12} className="captionDiv">
 					<h2>Паладин</h2>
 					<h4>Танк, лекарь, боец</h4>
-					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
+					<a href="http://localhost:3000/classes"><button className="btnStyle"><p>Вернуться назад</p></button></a>
 					
 				<br/>
 				<br/>

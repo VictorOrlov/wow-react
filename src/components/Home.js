@@ -1,7 +1,96 @@
 import React, { Component } from 'react';
 import '../styles/Home.css';
 import Header from './Header'; 
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, 
+Carousel, CarouselItem} from 'react-bootstrap';
+
+
+class ControlledCarousel extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.handleSelect = this.handleSelect.bind(this);
+
+    this.state = {
+      index: 0,
+      direction: null
+    };
+  }
+
+  handleSelect(selectedIndex, e) {
+    this.setState({
+      index: selectedIndex,
+      direction: e.direction
+    });
+  }
+
+  render() {
+    const { index, direction } = this.state;
+
+    return (
+      <Carousel
+        activeIndex={index}
+        direction={direction}
+        onSelect={this.handleSelect}
+      >
+        <Carousel.Item>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" 
+                src="https://www.youtube.com/embed/jO7yyauzv-k" 
+                frameborder="0" allow="autoplay; encrypted-media" 
+                allowfullscreen></iframe>
+            </div>
+        </Carousel.Item>
+        <Carousel.Item>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                 src="https://www.youtube.com/embed/DKYTgHzD9uE" 
+                 frameborder="0" 
+                 allow="autoplay; encrypted-media" 
+                 allowfullscreen></iframe>
+            </div>
+        </Carousel.Item>
+        <Carousel.Item>
+            <div class="embed-responsive embed-responsive-16by9">
+                 <iframe class="embed-responsive-item" 
+                 src="https://www.youtube.com/embed/L3Mg6lk6yyA" 
+                 frameborder="0" 
+                 allow="autoplay; encrypted-media" 
+                 allowfullscreen></iframe>
+            </div>
+        </Carousel.Item>
+        <Carousel.Item>
+           <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" 
+                src="https://www.youtube.com/embed/tp-utWVDpIQ" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen></iframe>
+           </div>
+        </Carousel.Item>
+        <Carousel.Item>
+           <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" 
+                src="https://www.youtube.com/embed/O_5gzXKnGYo" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen></iframe>
+           </div>
+        </Carousel.Item>
+        <Carousel.Item>
+           <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" 
+                src="https://www.youtube.com/embed/AkhjrRR9J7A" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen></iframe>
+           </div>
+        </Carousel.Item>
+      </Carousel>
+    );
+  }
+}
+
  
  
 
@@ -52,13 +141,7 @@ class Home extends Component {
         				</Col>
         				<Col md={8} className="contentHome">
         					<br/><br/><br/>
-        					<div class="embed-responsive embed-responsive-16by9">
-
-        						<iframe class="embed-responsive-item" 
-        						src="https://www.youtube.com/embed/jO7yyauzv-k" 
-        						frameborder="0" allow="autoplay; encrypted-media" 
-        						allowfullscreen></iframe>
-        					</div>
+                            <ControlledCarousel />
         					<br/><br/>
         					<h4>Особенности игры:</h4>
         					<p>

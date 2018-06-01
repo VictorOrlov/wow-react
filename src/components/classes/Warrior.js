@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Grid, Row, Col, Button } from 'react-bootstrap';
 import '../../styles/ClassesAllClasses.css';
 
 import Header from '../Header';
@@ -15,14 +15,24 @@ class Warrior extends Component{
 			<Grid className="wrappClassesDiv">
 				<Row>
 				<Col md={12} className="captionDiv">
+				<Row>
+				<Col md={10} sm={12} xs={12} >
 					<h2>Воин</h2>
 					<h4>Танк, боец</h4>
-					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
-					
-				<br/>
-				<br/>
-				<br/>
 				</Col>
+				<Col md={2} sm={12} xs={12} >
+					<a href="http://localhost:3000/classes">
+					<button className="btnStyle mouse-cursor-gradient-tracking">
+					<span>Вернуться назад</span>
+					</button>
+					</a>
+				</Col>
+				</Row>
+				</Col>	
+				<br/>
+				<br/>
+				<br/>
+				
 				<Col md={4} className="heroDesc">
 					<h4>Мастера войны</h4>
 					<p>В годы войны герои каждого из народов желали овладеть искусством боя. 

@@ -15,9 +15,9 @@ class Monk extends Component{
 			<Grid className="wrappClassesDiv">
 				<Row>
 				<Col md={12} className="captionDiv">
-					<h2>Воин</h2>
-					<h4>Танк, боец</h4>
-					<a href="http://localhost:3000/classes"><button>вернуться назад</button></a>
+					<h2>Монах</h2>
+					<h4>Танк, лекарь, боец</h4>
+					<a href="http://localhost:3000/classes"><button className="btnStyle"><p>Вернуться назад</p></button></a>
 					
 				<br/>
 				<br/>

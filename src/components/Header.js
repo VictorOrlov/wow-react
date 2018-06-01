@@ -3,7 +3,21 @@ import '../styles/Header.css';
 import { 
   Nav, Navbar, NavItem, 
   NavDropdown, MenuItem, Row,
-  Grid, Col, Image } from 'react-bootstrap';
+  Grid, Col, Image, Tooltip,
+  OverlayTrigger } from 'react-bootstrap';
+
+function LinkWithTooltip({ id, children, href, tooltip }) {
+  return (
+    <OverlayTrigger
+      overlay={<Tooltip id={id}>{tooltip}</Tooltip>}
+      placement="top"
+      delayShow={300}
+      delayHide={150}
+    >
+      <a href={href}>{children}</a>
+    </OverlayTrigger>
+  );
+}
 
 class Header extends Component{
 	render(){
@@ -20,19 +34,27 @@ class Header extends Component{
           <Navbar.Collapse>
             <Nav>
               <NavItem eventKey={1} href="http://localhost:3000/">
+               <span className="hover-underline-animation">
                 Главная
+                </span>
               </NavItem>
               <NavItem eventKey={2} href="http://localhost:3000/classes">
+               <span className="hover-underline-animation">
                 Классы
+                </span>
               </NavItem>
               <NavItem eventKey={3} href="http://localhost:3000/proff">
+               <span className="hover-underline-animation">
                 Профессии
+                </span>
               </NavItem>
-              <NavItem eventKey={4} href="#">
-                Рейды
+              <NavItem eventKey={4} href="http://localhost:3000/races">
+               <span className="hover-underline-animation">
+                Рассы
+                </span>
               </NavItem>
               <NavDropdown eventKey={5} title="Прочее" id="basic-nav-dropdown">
-                <MenuItem eventKey={5.1}>Рассы</MenuItem>
+                <MenuItem eventKey={5.1}>Рейды</MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey={5.2}>Гайды</MenuItem>
                 <MenuItem divider />
@@ -43,10 +65,14 @@ class Header extends Component{
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="#">
+              <LinkWithTooltip tooltip="Ещё не доработанно" href="#" id="tooltip-0">
                 <i class="fab fa-telegram"></i>
+              </LinkWithTooltip>
               </NavItem>
               <NavItem eventKey={2} href="#">
+              <LinkWithTooltip tooltip="Это тоже не доработанно" href="#" id="tooltip-1">
                 <i class="fab fa-github"></i>
+              </LinkWithTooltip>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
