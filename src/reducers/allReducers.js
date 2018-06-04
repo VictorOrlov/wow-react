@@ -5,6 +5,7 @@ import tabletAlliance from './races/tabletAlliance';
 import tabletHorde from './races/tabletHorde';
 import _proff from './professions/_proff';
 import _proff_action from './professions/_proff-action';
+import _classes_action from './classes/_classes_action';
 
 
 const allReducers = combineReducers({
@@ -12,8 +13,11 @@ const allReducers = combineReducers({
 	tabletTwo: tabletBoxTwo,
 	tabletAlliance: tabletAlliance,
 	tabletHorde: tabletHorde,
+
 	_proff: _proff,
-	action: _proff_action
+	action: _proff_action,
+
+	_classes_action: _classes_action
 });
 
 export default allReducers;

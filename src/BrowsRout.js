@@ -46,7 +46,7 @@ class BrowsRout extends Component{
             <Route path="/classes/death_king" component={DeathKing} />
             <Route path="/classes/mage" component={Mage} />
             <Route path="/classes/monk" component={Monk} />
-            <Route path="/classes/..." component={AnyClass} />
+            <Route path="/classes/any_class" component={AnyClass} />
             
             // Профессии
             <Route path="/proff" component={Proff} />

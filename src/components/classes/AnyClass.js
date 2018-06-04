@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Grid, Row, Col, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import '../../styles/ClassesAllClasses.css';
-import BoxOne from '../classes/BoxOne';
 
 import Header from '../Header';
 
@@ -60,8 +59,7 @@ class AnyClass extends Component{
 
 const mapStateToProps = (state) => {
 	return{
-		item: state.action,
-		tabletOne: state.tabletOne
+		item: state._classes_action
 	};
 }
 
