@@ -1,0 +1,28 @@
+.bgLogin{
+	background-image: url(../../../image/bg_Login_and_Signup/bgLogin.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+	min-height: 1000px;
+	color: white;
+}
+
+/*.centerText{
+	text-align: center;
+}*/
+
+.spirit{
+	height: 100px;
+}
+
+.butSign > a{
+	margin-left: 5px;
+	text-decoration: none;
+	color: #8383E1FF;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+}
+
+.butSign > a:hover{
+  text-decoration: none;
+    color: #FFD83DFF;
+}

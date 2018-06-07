@@ -64,14 +64,19 @@ class Header extends Component{
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">
-              <LinkWithTooltip tooltip="Ещё не доработанно" href="#" id="tooltip-0">
-                <i class="fab fa-telegram"></i>
-              </LinkWithTooltip>
+              <NavItem eventKey={2} href="http://localhost:3000/login">
+               <span className="hover-underline-animation">
+                Авторизация
+                </span>
               </NavItem>
               <NavItem eventKey={2} href="#">
+              <LinkWithTooltip tooltip="Ещё не доработанно" href="#" id="tooltip-0">
+                <i className="fab fa-telegram"></i>
+              </LinkWithTooltip>
+              </NavItem>
+              <NavItem eventKey={3} href="#">
               <LinkWithTooltip tooltip="Это тоже не доработанно" href="#" id="tooltip-1">
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </LinkWithTooltip>
               </NavItem>
             </Nav>

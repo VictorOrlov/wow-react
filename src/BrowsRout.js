@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+// Домяшняя и регистрация
 import Home from './components/Home';
+import Login from './components/Login_and_Signup/Login/Login';
+import Signup from './components/Login_and_Signup/Signup/Signup';
+
+// Профессии
 import Proff from './components/Proff';
 // Классы
 import Classes from './components/Classes';
@@ -32,7 +37,10 @@ class BrowsRout extends Component{
         return(
             <BrowserRouter >
             <Switch>
+            // Домашняя страница и страницы регистрации/авторизации
             <Route exact path="/" component={Home} />
+            <Route path='/login' component={Login} />
+            <Route path="/signup" component={Signup} />
             // Классы и его ветви
             <Route exact path="/classes" component={Classes} />
             <Route path="/classes/warrior" component={Warrior} />
