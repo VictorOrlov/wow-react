@@ -1,35 +1,31 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Router, Route, Switch} from 'react-router-dom';
 // Домяшняя и регистрация
-import Home from './components/Home';
+import Home from './components/home/Home';
 import Login from './components/Login_and_Signup/Login/Login';
 import Signup from './components/Login_and_Signup/Signup/Signup';
-
 // Профессии
-import Proff from './components/Proff';
+import Proff from './components/professions/Proff';
 // Классы
-import Classes from './components/Classes';
-
-import Warrior from './components/classes/Warrior';
-import Hunter from './components/classes/Hunter';
-import Priest from './components/classes/Priest';
-import Sham from './components/classes/Sham';
-import Warloc from './components/classes/Warloc';
-import Druid from './components/classes/Druid';
-import Paladin from './components/classes/Paladin';
-import Rogue from './components/classes/Rogue';
-import DeathKing from './components/classes/DeathKing';
-import Mage from './components/classes/Mage';
-import Monk from './components/classes/Monk';
-import AnyClass from './components/classes/AnyClass';
-
+import Classes from './components/classes/Classes';
+import Warrior from './components/classes/allClasses/Warrior';
+import Hunter from './components/classes/allClasses/Hunter';
+import Priest from './components/classes/allClasses/Priest';
+import Sham from './components/classes/allClasses/Sham';
+import Warloc from './components/classes/allClasses/Warloc';
+import Druid from './components/classes/allClasses/Druid';
+import Paladin from './components/classes/allClasses/Paladin';
+import Rogue from './components/classes/allClasses/Rogue';
+import DeathKing from './components/classes/allClasses/DeathKing';
+import Mage from './components/classes/allClasses/Mage';
+import Monk from './components/classes/allClasses/Monk';
+import AnyClass from './components/classes/allClasses/AnyClass';
 // Рассы
 import Races from './components/races/Races';
-
-import Human from './components/races/Human.js';
-
-
-import { BrowserRouter, Router, Route, Switch} from 'react-router-dom';
+import Human from './components/races/allRaces/Human';
+// Маунты
+import MountGuide from './components/mount_guide/MountGuide';
 
 
 class BrowsRout extends Component{
@@ -55,13 +51,13 @@ class BrowsRout extends Component{
             <Route path="/classes/mage" component={Mage} />
             <Route path="/classes/monk" component={Monk} />
             <Route path="/classes/any_class" component={AnyClass} />
-            
             // Профессии
             <Route path="/proff" component={Proff} />
-
             // Рассы
             <Route exact path="/races" component={Races} />
             <Route path="/races/human" component={Human} />
+            // Маунты
+            <Route path="/mounts" component={MountGuide} />
 
 
          </Switch>

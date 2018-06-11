@@ -1,0 +1,301 @@
+/*Общий стиль странницы*/
+.wrappClassesDiv{
+	width: 100%;
+	/*height: 2000px;*/
+	min-height: auto;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+} 
+
+/*основной background для каждого из классов*/
+.bg_warrior{
+	background-image: url(../../image/bg_Classes/warrior1.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_hunter{
+	background-image: url(../../image/bg_Classes/testHunt.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_priest{
+	background-image: url(../../image/bg_Classes/priest.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_sham{
+	background-image: url(../../image/bg_Classes/shaman.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_warloc{
+	background-image: url(../../image/bg_Classes/testWarloc2.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_druid{
+	background-image: url(../../image/bg_Classes/druid.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_paladin{
+	background-image: url(../../image/bg_Classes/paladin.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_rogue{
+	background-image: url(../../image/bg_Classes/rogue.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_dk{
+	background-image: url(../../image/bg_Classes/DK.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_mage{
+	background-image: url(../../image/bg_Classes/mage.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+.bg_human{
+	background-image: url(../../image/bg_Races/wind.jpg);
+	background-color: #000;
+	-webkit-background-size: auto;
+	background-size: cover;
+}
+
+
+
+/*Блок под шапкой*/
+.captionDiv{
+	margin-top: -25px;
+	text-align: center;
+	color: #FFFFFFFF;
+	font-size: 22px;
+	text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+}
+.captionDiv> h4{
+	color: #D1C1C1FF;
+}
+
+.btnStyle{
+	margin-top: 35px;
+	margin-right: 13%;
+	float: right;
+	color:#fff;
+	background-image: url(../../image/bg_Classes/Wow_Banner_1.png);
+	background-color:transparent;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	border: none;
+	border-radius: 5px;
+}
+
+.btnStyle>p{
+	padding: 5%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/*Настройки фото*/
+
+.imgPersR{
+	float: right;
+}
+.imgPersL{
+	/*float: left;*/
+}
+
+.imgPersC{
+	float: inherit;
+    padding-top: 10%;
+}
+
+/*Левый блок с контентом*/
+.heroDesc{
+	color: #FFFFFFFF;
+	text-align: left;
+	margin-left: 30px;
+	background-color: inherit;
+}
+
+
+/*правый блок. общие настройки*/
+.paperDesc{
+	float: right;
+	padding-top: 21%;
+	padding-left: 3%;
+	margin-right: 30px;
+	margin-left: 5px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.paperDesc> span{
+	text-align: left;
+	
+}
+
+.paperDesc> h3{
+	text-indent: -30px;
+}
+
+.paperDesc> span>p{
+	font-size: 14px;
+}
+
+/*Основной контент*/
+
+.imgKing{
+	margin: auto;
+}
+
+.textRight{
+	text-align: initial;
+	text-align: right;
+}
+
+.historyRaces{
+	color: #DDDDDDF7;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.historyRaces>h3{
+	text-align: center;
+}
+
+.historyRacesRight{
+	color: #DDDDDDF7;
+	text-align: right;
+	margin-left: 30px;
+}
+
+.historyRacesRight>h3{
+	text-align: center;
+}
+
+/*Настройки пр.блока под каждый класс*/
+
+.pabg_warrior{
+	background-image: url(../../image/bg_Classes/paper_bg/paperWarrior.png);
+}
+.pabg_warrior> h3, 
+.pabg_warrior> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_hunter{
+	background-image: url(../../image/bg_Classes/paper_bg/paperHunter.png);
+}
+.pabg_hunter> h3, 
+.pabg_hunter> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_priest{
+	background-image: url(../../image/bg_Classes/paper_bg/paperPrist.png);
+}
+.pabg_priest> h3, 
+.pabg_priest> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_sham{
+	background-image: url(../../image/bg_Classes/paper_bg/paperSham.png);
+}
+.pabg_sham> h3, 
+.pabg_sham> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_warloc{
+	background-image: url(../../image/bg_Classes/paper_bg/paperWarloc.png);
+}
+.pabg_warloc> h3, 
+.pabg_warloc> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_druid{
+	background-image: url(../../image/bg_Classes/paper_bg/paperDruid.png);
+}
+.pabg_druid> h3, 
+.pabg_druid> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_paladin{
+	background-image: url(../../image/bg_Classes/paper_bg/paperPaladin.png);
+}
+.pabg_paladin> h3, 
+.pabg_paladin> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_rogue{
+	background-image: url(../../image/bg_Classes/paper_bg/paperRogue.png);
+}
+.pabg_rogue> h3, 
+.pabg_rogue> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_dk{
+	background-image: url(../../image/bg_Classes/paper_bg/paperDK.png);
+}
+.pabg_dk> h3, 
+.pabg_dk> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_mage{
+	background-image: url(../../image/bg_Classes/paper_bg/paperMage.png);
+}
+.pabg_mage> h3, 
+.pabg_mage> span> h4{
+	color: #1E346BFF;
+}
+
+
+.pabg_monk{
+	background-image: url(../../image/bg_Classes/paper_bg/paperMonk.png);
+}
+.pabg_monk> h3, 
+.pabg_monk> span> h4{
+	color: #1E346BFF;
+}

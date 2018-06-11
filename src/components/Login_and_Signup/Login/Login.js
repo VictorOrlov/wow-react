@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../Header';
+import Header from '../../header/Header';
 import { PostData } from '../services/PostData';
 import { Redirect } from 'react-router-dom';
 import './Login.css';

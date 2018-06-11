@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { connect } from 'react-redux';
-import ProffList from './containers/ProffList';
-import ProffInfo from './containers/ProffInfo';
+import ProffList from './ProffList';
+import ProffInfo from './ProffInfo';
 
-import './Proff.css';
+import '../../styles/Proff.css';
 
 
 

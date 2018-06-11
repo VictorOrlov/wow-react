@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../../styles/Races.css';
+import './Races.css';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
-import Header from '../Header.js';
-import Alliance from './Alliance.js';
-import Horde from './Horde.js';
+import Header from '../header/Header';
+import Alliance from './boxRaces/Alliance';
+import Horde from './boxRaces/Horde';
 
 
 
