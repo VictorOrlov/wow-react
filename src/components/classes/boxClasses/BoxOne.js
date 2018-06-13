@@ -13,7 +13,7 @@ class BoxOne extends Component {
         return(
             <a 
               key={item.id} 
-              href={item.link}
+              href="/classes/any_class"
               onClick={() =>{
                 this.props.classSelect(item)
               }}  >
