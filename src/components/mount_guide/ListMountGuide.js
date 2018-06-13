@@ -1,12 +1,11 @@
 import React, { Component } from 'react'; 
 import { connect } from 'react-redux';
-import { Panel, PanelHeading, PanelTitle,
-PanelBody, PanelGroup} from 'react-bootstrap';
+import { Panel, PanelGroup } from 'react-bootstrap';
 import './MountGuide.css';
 
 class ListMountGuide extends Component{
 
-	showReputationList(){
+  showReputationList(){
     return this.props.mount_reput.map((mount) => {
       return(
         <li key={mount.id} >
@@ -88,9 +87,9 @@ class ListMountGuide extends Component{
 
 
 
-	render(){
-		return(
-			<PanelGroup accordion id="accordion-uncontrolled-example" className="bgPanel">
+  render(){
+    return(
+      <PanelGroup accordion id="accordion-uncontrolled-example" className="bgPanel">
 
                 <Panel eventKey="1" className="bgPanelBlock">
                   <Panel.Heading className="bgPanelHeading">
@@ -191,8 +190,8 @@ class ListMountGuide extends Component{
                 </Panel>
 
               </PanelGroup>
-		);
-	}
+    );
+  }
 }
 
 const mapStateToProps = (state) => {

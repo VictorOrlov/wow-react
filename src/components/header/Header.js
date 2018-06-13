@@ -2,27 +2,12 @@ import React, { Component } from 'react';
 import './Header.css';
 import { 
   Nav, Navbar, NavItem, 
-  NavDropdown, MenuItem, Row,
-  Grid, Col, Image, Tooltip,
-  OverlayTrigger } from 'react-bootstrap';
-
-function LinkWithTooltip({ id, children, href, tooltip }) {
-  return (
-    <OverlayTrigger
-      overlay={<Tooltip id={id}>{tooltip}</Tooltip>}
-      placement="top"
-      delayShow={300}
-      delayHide={150}
-    >
-      <a href={href}>{children}</a>
-    </OverlayTrigger>
-  );
-}
+  NavDropdown, MenuItem, Image } from 'react-bootstrap';
 
 class Header extends Component{
-	render(){
-	return(
-		<span>
+  render(){
+  return(
+    <span>
         <Image src= {require ("../../image/bg_Header/headerEbla.jpg")}  className="headerBG" />
         <Navbar inverse collapseOnSelect >
           <Navbar.Header>
@@ -70,21 +55,17 @@ class Header extends Component{
                 </span>
               </NavItem>
               <NavItem eventKey={2} href="#">
-              <LinkWithTooltip tooltip="Ещё не доработанно" href="#" id="tooltip-0">
                 <i className="fab fa-telegram"></i>
-              </LinkWithTooltip>
               </NavItem>
               <NavItem eventKey={3} href="#">
-              <LinkWithTooltip tooltip="Это тоже не доработанно" href="#" id="tooltip-1">
                 <i className="fab fa-github"></i>
-              </LinkWithTooltip>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
       </span>
-		);
-	}
+    );
+  }
 }
 
 export default Header;

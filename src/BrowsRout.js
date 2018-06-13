@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 // Домяшняя и регистрация
 import Home from './components/home/Home';
 import Login from './components/Login_and_Signup/Login/Login';
@@ -33,11 +32,11 @@ class BrowsRout extends Component{
         return(
             <BrowserRouter >
             <Switch>
-            // Домашняя страница и страницы регистрации/авторизации
+            {/* Домашняя страница и страницы регистрации/авторизации */}
             <Route exact path="/" component={Home} />
             <Route path='/login' component={Login} />
             <Route path="/signup" component={Signup} />
-            // Классы и его ветви
+            {/* Классы и его ветви*/}
             <Route exact path="/classes" component={Classes} />
             <Route path="/classes/warrior" component={Warrior} />
             <Route path="/classes/hunter" component={Hunter} />
@@ -51,12 +50,12 @@ class BrowsRout extends Component{
             <Route path="/classes/mage" component={Mage} />
             <Route path="/classes/monk" component={Monk} />
             <Route path="/classes/any_class" component={AnyClass} />
-            // Профессии
+            {/* Профессии*/}
             <Route path="/proff" component={Proff} />
-            // Рассы
+            {/*Рассы*/}
             <Route exact path="/races" component={Races} />
             <Route path="/races/human" component={Human} />
-            // Маунты
+            {/*Маунты*/}
             <Route path="/mounts" component={MountGuide} />
 
 

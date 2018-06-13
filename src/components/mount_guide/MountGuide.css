@@ -1,55 +1,55 @@
 .bgMountGuide{
-	background-image: url(../../image/bg_Mounts/bgMouts.jpg);
-	background-attachment: fixed;
-	-webkit-background-size: auto;
-	background-size: cover;
+  background-image: url(../../image/bg_Mounts/bgMouts.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
 }
 
 
 /*стили Панелей*/
 .bgPanel{
-	background-color: #000000A3;
+  background-color: #000000A3;
 }
 
 .bgPanelBlock{
-	margin-bottom: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .bgPanelHeading{
-	background-image: url(../../image/bg_Mounts/bgMountPanel.jpg) !important;
-	-webkit-background-size: auto;
-	background-size: cover;
-	color: white !important;
+  background-image: url(../../image/bg_Mounts/bgMountPanel.jpg) !important;
+  -webkit-background-size: auto;
+  background-size: cover;
+  color: white !important;
 }
 
 .bgPanelTitle{
-	background: #000000FF;
-	color: #DDDDDDC4;
+  background: #000000FF;
+  color: #DDDDDDC4;
 }
 
 .bgPanelTitle>h4{
-	text-align: center;
+  text-align: center;
 }
 
 /*Призрачные блоки*/
 .colTop{
-	min-height: 100px;
-	background-color: #000000A3;
-	color: #DDDDDDC4;
-	margin-bottom: 15px;
+  min-height: 100px;
+  background-color: #000000A3;
+  color: #DDDDDDC4;
+  margin-bottom: 15px;
 }
 
 .colBottom{
-	min-height: 400px;
+  min-height: 400px;
 }
 
 
 /*Стили для частей находящихся в хранилище - src\reducers\mountGuide\_mountsReputation */
 .colorBlue{
-	color: blue;
+  color: blue;
 }
 
 .colorRed{
-	color: red;
+  color: red;
 }
   

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
-import { connect } from 'react-redux';
+import { Row, Col } from 'react-bootstrap';
 import ProffList from './containers/ProffList';
 import ProffInfo from './containers/ProffInfo';
 

@@ -10,17 +10,17 @@ import mountGuideReducers from './mountGuide/mountGuideReducers';
 
 
 const allReducers = combineReducers({
-	tabletOne: tabletBoxOne,
-	tabletTwo: tabletBoxTwo,
-	tabletAlliance: tabletAlliance,
-	tabletHorde: tabletHorde,
+  tabletOne: tabletBoxOne,
+  tabletTwo: tabletBoxTwo,
+  tabletAlliance: tabletAlliance,
+  tabletHorde: tabletHorde,
 
-	_proff: _proff,
-	action: _proff_action,
+  _proff: _proff,
+  action: _proff_action,
 
-	_classes_action: _classes_action,
+  _classes_action: _classes_action,
 
-	mount: mountGuideReducers
+  mount: mountGuideReducers
 });
 
 export default allReducers;

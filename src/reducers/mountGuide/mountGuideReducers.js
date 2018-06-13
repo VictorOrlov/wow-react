@@ -10,14 +10,14 @@ import _mountsPersonalCabinet from './_mountsPersonalCabinet';
 
 
 const mountGuideReducers = combineReducers({
-	reputation: _mountsReputation,
-	pvp: _mountsPvP,
-	pro_mount: _mountsProff,
-	pve: _mountsPvE,
-	quest: _mountsQuest,
-	silver: _mountsSilverTournament,
-	game_event: _mountsGameEvents,
-	personal_cabinet: _mountsPersonalCabinet
+  reputation: _mountsReputation,
+  pvp: _mountsPvP,
+  pro_mount: _mountsProff,
+  pve: _mountsPvE,
+  quest: _mountsQuest,
+  silver: _mountsSilverTournament,
+  game_event: _mountsGameEvents,
+  personal_cabinet: _mountsPersonalCabinet
 });
 
 export default mountGuideReducers;

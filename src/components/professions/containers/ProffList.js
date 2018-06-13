@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { ListGroup, ListGroupItem } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import proffSelect from '../../../actions/proffSelect';
@@ -14,7 +14,7 @@ class ProffList extends Component{
         onClick={() =>{
           this.props.proffSelect(item)
         }}>
-			<a href="#top"><h4 >{item.name}</h4></a>
+      <a href="#top"><h4 >{item.name}</h4></a>
 
         </ListGroupItem>
       );
@@ -32,13 +32,13 @@ class ProffList extends Component{
 }
 
 const mapStateToProps = (state) => {
-	return{
-		_proff: state._proff
-	}
+  return{
+    _proff: state._proff
+  }
 }
 
 const mapActionToProps = (dispatch) => {
-	return bindActionCreators({proffSelect: proffSelect}, dispatch);
+  return bindActionCreators({proffSelect: proffSelect}, dispatch);
 }
 
 export default connect (mapStateToProps, mapActionToProps) (ProffList);

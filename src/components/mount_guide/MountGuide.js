@@ -6,11 +6,11 @@ import ListMountGuide from './ListMountGuide';
 
 class MountGuide extends Component {
   render(){
-		return(
-			<div className="bgMountGuide">
-		 		<Header />
-		 		<Grid> 
-		 			<Row>
+    return(
+      <div className="bgMountGuide">
+         <Header />
+         <Grid> 
+           <Row>
             <Col md={10} mdOffset={1} className="colTop">
               <h2>Ездовые животные <small>(маунты)</small></h2>
               <p>В игре присутствует огромное количество ездовых животных, 
@@ -21,16 +21,16 @@ class MountGuide extends Component {
               экзотических животных (или механизмах) по всему Азероту.</p>
             </Col>
 
-		 			 	<Col md={8} mdOffset={2} sm={8} smOffset={2}  >
+              <Col md={8} mdOffset={2} sm={8} smOffset={2}  >
                  <ListMountGuide/> 
             </Col>
 
             <Col md={12} xsHidden className="colBottom"></Col>
-  				</Row>
-		 		</Grid>
-			 </div>
-		);
-	}
+          </Row>
+         </Grid>
+       </div>
+    );
+  }
 };
 
 
