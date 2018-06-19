@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Row, Col } from 'react-bootstrap';
 
 class Information extends Component{
   render(){
@@ -35,9 +36,25 @@ class Information extends Component{
     }
     return(
       
-            <a className="anchor" name="top">
-              {this.props.item.info}
-            </a>
+            <Row>
+
+              <Col md={8}>
+                <Col md={12}>
+                  <a className="anchor" name="top">
+                      {this.props.item.info}
+                  </a>
+                </Col>
+                <Col md={12} className="bgManual">
+                  {this.props.item.manual}
+                </Col>
+              </Col>
+
+              <Col md={4} className="bgAdvantage">
+                {this.props.item.advantage}
+              </Col>
+
+              
+            </Row>
           
     );
   }

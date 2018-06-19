@@ -11,16 +11,16 @@
 .ProffDiv{
   color: white;
   text-align: center;
-  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
   background-color: #00000046;
   border-radius: 10px;
   font-size: bold;
    overflow-x: hidden;
+  margin-bottom: 10px;
 }
 
 .ProffDiv > p{
   font-size: 20px;
-  font-family: Bradley Hand, cursive;
 }
 
 /*Меню профессий*/
@@ -33,8 +33,12 @@
   color: white;
   text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
   background-color: rgba(60,60,60,0.5);
+  background-image: url(../../image/bg_tabletProfs/bgContent.jpg);
+  -webkit-background-size: auto;
+  background-size: cover;
   border-radius: 2px;
    padding-bottom: 200px;
+   padding-top: 5px;
    width: auto;
 }
 
@@ -47,6 +51,50 @@
   text-decoration: none;
     color: white;
 }
+
+/*Стили информационного блока*/
+
+.bgAdvantage{
+  background-image: url(../../image/bg_tabletProfs/bgAdvantage.jpg);
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bgManual{
+  background-image: url(../../image/bg_tabletProfs/bgManual.jpg);
+  -webkit-background-size: auto;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+/*Стили className которых находится в хранилище*/
+.itemInfo{
+  color: #AE9C40EE;
+}
+.itemInfo>h2{
+  color: #D6D6D6E5;
+  text-align: center;
+}
+
+.itemManual{
+  color: #D0B53EFF;
+}
+.itemManual>h4,
+.itemManual>p>bold{
+  color: #D6D6D6E5;
+}
+
+.itemAdvantage{
+  color: #AE9C40E0;
+}
+.itemAdvantage>h4{
+  color: #F77235D9;
+}
+.itemAdvantage>p>bold{
+  color: #D6D6D6E5;
+}
+
+
 /*______________________________________________________________________________________*/
 
 /*отдельные*/
