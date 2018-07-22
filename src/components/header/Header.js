@@ -8,7 +8,7 @@ class Header extends Component{
   render(){
   return(
     <span>
-        <Image src= {require ("../../image/bg_Header/headerEbla.jpg")}  className="headerBG" />
+        <Image src= {require ("../../image/Header/headerEbla.jpg")}  className="headerBG" />
         <Navbar inverse collapseOnSelect >
           <Navbar.Header>
             <Navbar.Brand>
@@ -45,7 +45,7 @@ class Header extends Component{
                 <MenuItem divider />
                 <MenuItem eventKey={5.3} href="/mounts">Маунты</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={5.3}>Аддоны</MenuItem>
+                <MenuItem eventKey={5.4} href="/addons">Аддоны</MenuItem>
               </NavDropdown>
             </Nav>
             <Nav pullRight>

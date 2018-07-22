@@ -33,7 +33,7 @@
   color: white;
   text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
   background-color: rgba(60,60,60,0.5);
-  background-image: url(../../image/bg_tabletProfs/bgContent.jpg);
+  background-image: url(../../image/Profs/bgContent.jpg);
   -webkit-background-size: auto;
   background-size: cover;
   border-radius: 2px;
@@ -55,13 +55,13 @@
 /*Стили информационного блока*/
 
 .bgAdvantage{
-  background-image: url(../../image/bg_tabletProfs/bgAdvantage.jpg);
+  background-image: url(../../image/Profs/bgAdvantage.jpg);
   -webkit-background-size: auto;
   background-size: cover;
 }
 
 .bgManual{
-  background-image: url(../../image/bg_tabletProfs/bgManual.jpg);
+  background-image: url(../../image/Profs/bgManual.jpg);
   -webkit-background-size: auto;
   background-size: cover;
   margin-bottom: 10px;
@@ -80,7 +80,7 @@
   color: #D0B53EFF;
 }
 .itemManual>h4,
-.itemManual>p>bold{
+.itemManual>p>span{
   color: #D6D6D6E5;
 }
 
@@ -90,7 +90,7 @@
 .itemAdvantage>h4{
   color: #F77235D9;
 }
-.itemAdvantage>p>bold{
+.itemAdvantage>p>span{
   color: #D6D6D6E5;
 }
 
@@ -122,58 +122,58 @@
 
 .butAlchemy{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/alchemy.jpeg);
+  background-image: url(../../image/Profs/alchemy.jpeg);
 }
 
 
 .butMining{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/mining.jpeg);
+  background-image: url(../../image/Profs/mining.jpeg);
 }
 
 .butEngineering{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/engineering.jpeg);
+  background-image: url(../../image/Profs/engineering.jpeg);
 }
 
 .butLeather{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/leatherworking.jpeg);
+  background-image: url(../../image/Profs/leatherworking.jpeg);
 }
 
 .butBlacksmith{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/blacksmith.jpeg);
+  background-image: url(../../image/Profs/blacksmith.jpeg);
 }
 
 .butEnchantment{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/enchantment.jpeg);
+  background-image: url(../../image/Profs/enchantment.jpeg);
 }
 
 .butIncsription{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/inscription.jpeg);
+  background-image: url(../../image/Profs/inscription.jpeg);
 }
 
 .butTailloring{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/tailloring.jpeg);
+  background-image: url(../../image/Profs/tailloring.jpeg);
 }
 
 .butSkinning{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/skinning.jpeg);
+  background-image: url(../../image/Profs/skinning.jpeg);
 }
 
 .butHerbalism{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/herbalism.jpeg);
+  background-image: url(../../image/Profs/herbalism.jpeg);
 }
 
 .butJevelcrafting{
   margin-top: 10px;
-  background-image: url(../../image/bg_tabletProfs/jevelcrafting.jpeg);
+  background-image: url(../../image/Profs/jevelcrafting.jpeg);
 }
 
 @media screen and (max-width: 800px) {

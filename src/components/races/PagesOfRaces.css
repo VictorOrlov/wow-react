@@ -1,0 +1,387 @@
+/*Общий стиль странницы*/
+.wrappClassesDiv{
+  width: 100%;
+  /*height: 2000px;*/
+  height: auto;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+} 
+
+/*основной background для каждой из расс*/
+.bg_human{
+  background-image: url(../../image/Races/Race_Pages/Human/Human_Location.jpg);
+  background-color: #000;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_dwarf{
+  background-image: url(../../image/Races/Race_Pages/Dwarf/Dwarf_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_night_elf{
+  background-image: url(../../image/Races/Race_Pages/Night_elf/Night_Elf_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_gnome{
+  background-image: url(../../image/Races/Race_Pages/Gnome/Gnome_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_draeney{
+  background-image: url(../../image/Races/Race_Pages/Draeney/Draeney_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+
+.bg_worgen{
+  background-image: url(../../image/Races/Race_Pages/Worgen/Worgen_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_orc{
+  background-image: url(../../image/Races/Race_Pages/Orc/Orc_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_undead{
+  background-image: url(../../image/Races/Race_Pages/Undead/Undead_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_tauren{
+  background-image: url(../../image/Races/Race_Pages/Tauren/Tauren_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_troll{
+  background-image: url(../../image/Races/Race_Pages/Troll/Troll_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_blood_elf{
+  background-image: url(../../image/Races/Race_Pages/Blood_elf/Blood_Elf_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_goblin{
+  background-image: url(../../image/Races/Race_Pages/Goblin/Goblin_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+.bg_pandaren{
+  background-image: url(../../image/Races/Race_Pages/Pandaren/Pandaren_Location.jpg);
+  background-attachment: fixed;
+  -webkit-background-size: auto;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Блок под шапкой*/
+.captionDiv{
+  margin-top: -25px;
+  text-align: center;
+  color: #FFFFFFFF;
+  font-size: 22px;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+}
+.captionDiv> h4{
+  color: #D1C1C1FF;
+}
+
+.btnStyle{
+  margin-top: 35px;
+  margin-right: 13%;
+  float: right;
+  color:#fff;
+  background-image: url(../../image/Races/Race_Pages/Wow_Banner_1.png);
+  background-color:transparent;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnStyle>p{
+  padding: 5%;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+/*Настройки фото*/
+
+.imgPersR{
+  float: right;
+}
+.imgPersL{
+  /*float: left;*/
+}
+
+.imgPersC{
+  float: inherit;
+    padding-top: 10%;
+}
+
+/*Левый блок с контентом*/
+.heroDesc{
+  color: #FFFFFFFF;
+  text-align: left;
+  margin-left: 30px;
+  background-color: inherit;
+}
+
+
+/*правый блок. общие настройки*/
+.paperDesc{
+  float: right;
+  padding-top: 21%;
+  padding-left: 3%;
+  margin-right: 30px;
+  margin-left: 5px;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.paperDesc> span{
+  text-align: left;
+  
+}
+
+.paperDesc> h3{
+  text-indent: -30px;
+}
+
+.paperDesc> span>p{
+  font-size: 14px;
+}
+
+/*Основной контент*/
+
+
+
+.textRight{
+  text-align: initial;
+  text-align: right;
+}
+
+.historyRaces{
+  color: #DDDDDDF7;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.historyRaces>h3{
+  text-align: center;
+}
+
+.historyRacesRight{
+  color: #DDDDDDF7;
+  text-align: right;
+  margin-left: 30px;
+}
+
+.historyRacesRight>h3{
+  text-align: center;
+}
+
+/*Настройки пр.блока под каждый класс*/
+
+.pabg_human{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperHuman.png);
+}
+.pabg_human> h3, 
+.pabg_human> span> h4{
+  color: #1E346BFF;
+}
+
+.pabg_dwarf{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperDwarf.png);
+}
+.pabg_dwarf> h3, 
+.pabg_dwarf> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_night_elf{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperNight_Elf.png);
+}
+.pabg_night_elf> h3, 
+.pabg_night_elf> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_gnome{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperGnome.png);
+}
+.pabg_gnome> h3, 
+.pabg_gnome> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_draeney{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperDraeney.png);
+}
+.pabg_draeney> h3, 
+.pabg_draeney> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_worgen{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperWorgen.png);
+}
+.pabg_worgen> h3, 
+.pabg_worgen> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_orc{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperOrc.png);
+}
+.pabg_orc> h3, 
+.pabg_orc> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_undead{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperUndead.png);
+}
+.pabg_undead> h3, 
+.pabg_undead> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_tauren{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperTauren.png);
+}
+.pabg_tauren> h3, 
+.pabg_tauren> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_troll{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperTroll.png);
+}
+.pabg_troll> h3, 
+.pabg_troll> span> h4{
+  color: #1E346BFF;
+}
+
+
+.pabg_blood_elf{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperBlood_Elf.png);
+}
+.pabg_blood_elf> h3, 
+.pabg_blood_elf> span> h4{
+  color: #1E346BFF;
+}
+
+.pabg_goblin{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperGoblin.png);
+}
+.pabg_goblin> h3, 
+.pabg_goblin> span> h4{
+  color: #1E346BFF;
+}
+
+.pabg_pandaren{
+  background-image: url(../../image/Races/Race_Pages/paper_bg/paperPandaren.png);
+}
+.pabg_pandaren> h3, 
+.pabg_pandaren> span> h4{
+  color: #1E346BFF;
+}
+
+
+/*стиля для отдела других классов*/
+
+.wrappNextRaceDiv{
+  width: 100%;
+  height: auto;
+  text-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+  /*margin: 0;*/
+  /*padding-left: 13%;*/
+  font-size: 8px;
+  padding-bottom: 10%;
+  text-align: center;
+} 
+
+.textDivTablet>p{
+  font-size: 14px;
+}
+
+.nextRaceContainer{
+  padding: 5%;
+  padding-left: 0;
+  background-color: #111;
+}
+
+.nextRaceContainer:hover{
+    border: 2px solid #E0DC1EFF;
+    color:#E99415FF;
+} 
+
+.text_center{
+  text-align: center;
+  color: #D1C1C1FF;
+}
+
+/*кнопка прокрутки вверх страницы*/
+.scrollup{
+width:40px;
+height:40px;
+/*opacity:0.3;*/
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+text-indent:-9999px;
+background: url('../../image/Races/Race_Pages/up_button.png') no-repeat;
+}
+

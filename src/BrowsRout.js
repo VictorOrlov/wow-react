@@ -19,12 +19,25 @@ import Rogue from './components/classes/allClasses/Rogue';
 import DeathKing from './components/classes/allClasses/DeathKing';
 import Mage from './components/classes/allClasses/Mage';
 import Monk from './components/classes/allClasses/Monk';
-import AnyClass from './components/classes/allClasses/AnyClass';
 // Рассы
 import Races from './components/races/Races';
 import Human from './components/races/allRaces/Human';
+import Dwarf from './components/races/allRaces/Dwarf';
+import Night_Elf from './components/races/allRaces/Night_Elf';
+import Gnome from './components/races/allRaces/Gnome';
+import Draeney from './components/races/allRaces/Draeney';
+import Worgen from './components/races/allRaces/Worgen';
+import Orc from './components/races/allRaces/Orc';
+import Undead from './components/races/allRaces/Undead';
+import Tauren from './components/races/allRaces/Tauren';
+import Troll from './components/races/allRaces/Troll';
+import Blood_Elf from './components/races/allRaces/Blood_Elf';
+import Goblin from './components/races/allRaces/Goblin';
+import Pandaren from './components/races/allRaces/Pandaren';
 // Маунты
 import MountGuide from './components/mount_guide/MountGuide';
+// Аддоны
+import Addons from './components/addons/Addons';
 
 
 class BrowsRout extends Component{
@@ -49,14 +62,27 @@ class BrowsRout extends Component{
             <Route path="/classes/death_king" component={DeathKing} />
             <Route path="/classes/mage" component={Mage} />
             <Route path="/classes/monk" component={Monk} />
-            <Route path="/classes/any_class" component={AnyClass} />
             {/* Профессии*/}
             <Route path="/proff" component={Proff} />
             {/*Рассы*/}
             <Route exact path="/races" component={Races} />
             <Route path="/races/human" component={Human} />
+            <Route path="/races/dwarf" component={Dwarf} />
+            <Route path="/races/night_elf" component={Night_Elf} />
+            <Route path="/races/gnome" component={Gnome} />
+            <Route path="/races/draeney" component={Draeney} />
+            <Route path="/races/worgen" component={Worgen} />
+            <Route path="/races/orc" component={Orc} />
+            <Route path="/races/undead" component={Undead} />
+            <Route path="/races/tauren" component={Tauren} />
+            <Route path="/races/troll" component={Troll} />
+            <Route path="/races/blood_elf" component={Blood_Elf} />
+            <Route path="/races/goblin" component={Goblin} />
+            <Route path="/races/pandaren" component={Pandaren} />
             {/*Маунты*/}
             <Route path="/mounts" component={MountGuide} />
+            {/*Аддоны*/}
+            <Route path="/addons" component={Addons} />
 
 
          </Switch>

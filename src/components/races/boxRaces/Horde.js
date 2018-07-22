@@ -7,10 +7,10 @@ class Horde extends Component {
 
   render(){
     return(
-        this.props.tabletHorde.map((race)=>{
+        this.props.horde.map((race)=>{
           return(
             <a key={race.id} href={race.link}>
-            <Col md={12} className="classesContainer">
+            <Col md={12} className="racesContainer">
               <Row>
                 <Col md={4} sm={4} xs={12} className="imageDivTablet">
                   {race.img}
@@ -30,7 +30,7 @@ class Horde extends Component {
 
 const mapStateToProps = (state) => {
   return{
-    tabletHorde: state.tabletHorde
+    horde: state.tabletRaces.horde
   }
 }
 

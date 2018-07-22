@@ -7,11 +7,10 @@
   background-color: #000;
 }
 
-/*Лого*/
-.hover-underline-animation {
+/*Нижнее плавное подчеркивание. P.S: появляется баг на вкладке Аддонов*/
+/*.hover-underline-animation {
   display: inline-block;
   position: relative;
-  /*color: #0087ca;*/
 }
 .hover-underline-animation::after {
   content: '';
@@ -28,4 +27,4 @@
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+}*/

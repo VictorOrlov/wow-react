@@ -23,7 +23,9 @@
 }
 
 .bgPanelTitle{
-  background: #000000FF;
+  background-image: url(../../image/bg_Mounts/bgPanelTitle.jpg);
+  -webkit-background-size: auto;
+  background-size: cover;
   color: #DDDDDDC4;
 }
 

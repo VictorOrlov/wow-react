@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
-import '../ClassesAllClasses.css';
-
-import Header from '../../header/Header';
+import { connect } from 'react-redux';
+import CarcassForEachClass from './CarcassForEachClass';
 
 
 class Paladin extends Component{
@@ -10,79 +8,16 @@ class Paladin extends Component{
   
   render(){
     return(
-      <div className="bg_paladin">
-      <Header />
-      <Grid className="wrappClassesDiv">
-        <Row>
-        <Col md={12} className="captionDiv">
-          <h2>Паладин</h2>
-          <h4>Танк, лекарь, боец</h4>
-          <a href="http://localhost:3000/classes"><button className="btnStyle"><p>Вернуться назад</p></button></a>
-          
-        <br/>
-        <br/>
-        <br/>
-        </Col>
-        <Col md={4} className="heroDesc">
-          <h4>Оплот справедливости</h4>
-          <p>Призвание паладина — защищать слабых, карать злодеев 
-          и изгонять зло из самых темных уголков мира. В бою эти 
-          воины Света полагаются на латы, способные защитить от 
-          сильнейшего противника, и на благословение Света, 
-          способное исцелять раны и даже воскрешать павших. </p><br/>
-
-          <h4>Описание</h4>
-          <p>Паладины бьются с врагом лицом к лицу, полагаясь на 
-          тяжелые доспехи и навыки целительства. Прочный щит или 
-          двуручное оружие — не столь важно, чем владеет паладин. 
-          Он сумеет не только защитить соратников от вражеских 
-          когтей и клинков, но и удержит группу на ногах при 
-          помощи исцеляющих заклинаний. </p><br/>
-
-          <ul>
-            <li><strong>Тип</strong><br/> Танк, лекарь, боец</li><br/>
-            <li><strong>Индикаторы</strong><br/>Здоровье, мана, энергия Света</li><br/>
-            <li><strong>Броня</strong><br/>Латы, щиты</li><br/>
-            <li><strong>Оружие</strong><br/>Топоры, дробящее, мечи, древковое</li><br/>
-          </ul>
-        </Col>
-
-        <Col md={4} ></Col>
-
-        <Col md={4} className="paperDesc pabg_paladin">
-          <h3>Особенности</h3>
-          <span>
-            <h4>Танк</h4>
-            <p>
-            Паладины используют самые тяжелые доспехи и щиты, 
-            отвлекая на себя противника и защищая более слабых 
-            членов отряда.
-            </p><br/>
-
-            <h4>Лечение</h4>
-            <p>
-            Паладины обладают могущественными способностями 
-            целителя и помогают союзникам выстоять в бою.
-            </p><br/>
-
-            <h4>Ближний бой</h4>
-            <p>
-            Священная сила, которй паладины наполняют свое оружие, 
-            увеличивает урон от наносимых ими ударов.
-            </p><br/>
-
-            <h4>Благословения и аура</h4>
-            <p>
-            Паладины, защитники порядка, очень эффективны в группе: 
-            их благословения и ауры могут повысить наносимый урон и 
-            повысить выживаемость и для них самих, и для их союзников.
-            </p><br/>
-          </span>
-        </Col>
-        </Row>
-      </Grid>
-      </div>
+      <CarcassForEachClass class={this.props.paladin} />
       );
   }
 };
-export default Paladin;
+
+const mapStateToProps = (state) => {
+  return{
+    paladin: state.cont_class.paladin
+  };
+}
+
+
+export default connect(mapStateToProps) (Paladin);

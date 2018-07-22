@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script> var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true}; </script>
     <script src = " //wow.zamimg.com/widgets/power.js "> </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
  
 
 
@@ -18,5 +20,25 @@
     <noscript>
     </noscript>
     <div id="root"></div>
+
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+     
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 600) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+     
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 400 }, 600);
+    return false;
+    });
+     
+    });
+    </script>
   </body>
 </html>

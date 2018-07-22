@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Classes.css'
 import { Grid, Row, Col } from 'react-bootstrap';
 import Header from '../header/Header';
-import BoxOne from './boxClasses/BoxOne';
-import BoxTwo from './boxClasses/BoxTwo';
+import BoxOne from './containers/BoxOne';
+import BoxTwo from './containers/BoxTwo';
 
 
 

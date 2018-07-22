@@ -8,10 +8,10 @@ class Alliance extends Component {
 
   render(){
     return(
-        this.props.tabletAlliance.map((race)=>{
+        this.props.alliance.map((race)=>{
           return(
             <a key={race.id} href={race.link}>
-            <Col md={12} className="classesContainer">
+            <Col md={12} className="racesContainer">
               <Row>
                 <Col md={4} sm={4} xs={12} className="imageDivTablet">
                   {race.img}
@@ -31,7 +31,7 @@ class Alliance extends Component {
 
 const mapStateToProps = (state) => {
   return{
-    tabletAlliance: state.tabletAlliance
+    alliance: state.tabletRaces.alliance
   }
 }
 

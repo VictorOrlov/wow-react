@@ -23,7 +23,7 @@ class Races extends Component{
           <Row>
           <Col md={6} >
             <span className="fractionLogo">
-              <h2>Альянс    <Image src = {require ('../../image/RacesTablet/alliance.png'  )} /></h2>
+              <h2>Альянс    <Image src = {require ('../../image/Races/RacesTablet/alliance.png'  )} /></h2>
             </span>
               <Row>
                 <Alliance />
@@ -33,7 +33,7 @@ class Races extends Component{
           
           <Col md={6} >
             <span className="fractionLogo">
-              <h2>Орда   <Image src = {require ('../../image/RacesTablet/horde.png'  )} /></h2>
+              <h2>Орда   <Image src = {require ('../../image/Races/RacesTablet/horde.png'  )} /></h2>
             </span>
               <Row >
                 <Horde />
