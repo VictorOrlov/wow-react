@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './MountGuide.css';
-import Header from '../header/Header';
 import { Grid, Row, Col } from 'react-bootstrap';
 import ListMountGuide from './ListMountGuide';
 
@@ -8,7 +7,6 @@ class MountGuide extends Component {
   render(){
     return(
       <div className="bgMountGuide">
-         <Header />
          <Grid> 
            <Row>
             <Col md={10} mdOffset={1} className="colTop">

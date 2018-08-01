@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../../header/Header';
 import { PostData } from '../services/PostData';
 import { Redirect } from 'react-router-dom';
 import './Signup.css';
@@ -58,7 +57,6 @@ class Signup extends Component {
 
     return (
       <div className="bgSignup">
-        <Header />
         <Grid> 
           <Row>
 

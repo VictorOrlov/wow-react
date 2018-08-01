@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Races.css';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
-import Header from '../header/Header';
 import Alliance from './boxRaces/Alliance';
 import Horde from './boxRaces/Horde';
 
@@ -11,7 +10,6 @@ class Races extends Component{
   render(){
     return(
       <div className="wrappRacesDiv">
-        <Header />
         <Grid>
         <Row>
           <Col md={12} className="textDiv">

@@ -5,6 +5,7 @@ import _proff from './professions/_proff';
 import _proff_action from './professions/_proff-action';
 import _classesContent from './classes/classesContent';
 import _racesContent from './races/racesContent';
+import _guides from './guides/guidesContent';
 import mountGuideReducers from './mountGuide/mountGuideReducers';
 import _addons from './addons/_addons';
 
@@ -19,6 +20,8 @@ const allReducers = combineReducers({
   cont_class: _classesContent,
 
   cont_race: _racesContent,
+
+  cont_guide: _guides,
 
   mount: mountGuideReducers,
 

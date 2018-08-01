@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../PagesOfClasses.css';
-import Header from '../../header/Header';
 
 
 class CarcassForEachClass extends Component{
@@ -9,7 +8,6 @@ class CarcassForEachClass extends Component{
     
     return(
       <div className={this.props.class.main_bg}>
-      <Header />
         <Row className="wrappClassesDiv">
         <Col md={12} className="captionDiv">
         <Row>

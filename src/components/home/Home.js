@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Home.css';
-import Header from '../header/Header';
 import { Grid, Row, Col } from 'react-bootstrap';
 
 
@@ -11,7 +10,6 @@ class Home extends Component {
   render(){
     return(
       <div className="bgHome">
-         <Header />
          <Grid className="bgAllContent"> 
            <Row>
               <Col md={12} className="contentHomeTitle">

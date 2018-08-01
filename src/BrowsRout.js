@@ -34,6 +34,19 @@ import Troll from './components/races/allRaces/Troll';
 import Blood_Elf from './components/races/allRaces/Blood_Elf';
 import Goblin from './components/races/allRaces/Goblin';
 import Pandaren from './components/races/allRaces/Pandaren';
+// Гайды
+import Guides from './components/guides/Guides';
+import GuideWarrior from "./components/guides/AllGuides/GuideWarrior";
+import GuidePaladin from "./components/guides/AllGuides/GuidePaladin";
+import GuideHunter from "./components/guides/AllGuides/GuideHunter";
+import GuideRogue from "./components/guides/AllGuides/GuideRogue";
+import GuidePriest from "./components/guides/AllGuides/GuidePriest";
+import GuideDK from "./components/guides/AllGuides/GuideDK";
+import GuideSham from "./components/guides/AllGuides/GuideSham";
+import GuideMage from "./components/guides/AllGuides/GuideMage";
+import GuideWarlock from "./components/guides/AllGuides/GuideWarlock";
+import GuideMonk from "./components/guides/AllGuides/GuideMonk";
+import GuideDruid from "./components/guides/AllGuides/GuideDruid";
 // Маунты
 import MountGuide from './components/mount_guide/MountGuide';
 // Аддоны
@@ -79,6 +92,19 @@ class BrowsRout extends Component{
             <Route path="/races/blood_elf" component={Blood_Elf} />
             <Route path="/races/goblin" component={Goblin} />
             <Route path="/races/pandaren" component={Pandaren} />
+            {/*Гайды*/}
+            <Route exact path="/guides" component={Guides} />
+            <Route path="/guides/warrior" component={GuideWarrior} />
+            <Route path="/guides/paladin" component={GuidePaladin} />
+            <Route path="/guides/hunter" component={GuideHunter} />
+            <Route path="/guides/rogue" component={GuideRogue} />
+            <Route path="/guides/priest" component={GuidePriest} />
+            <Route path="/guides/dk" component={GuideDK} />
+            <Route path="/guides/shaman" component={GuideSham} />
+            <Route path="/guides/mage" component={GuideMage} />
+            <Route path="/guides/warlock" component={GuideWarlock} />
+            <Route path="/guides/monk" component={GuideMonk} />
+            <Route path="/guides/druid" component={GuideDruid} />
             {/*Маунты*/}
             <Route path="/mounts" component={MountGuide} />
             {/*Аддоны*/}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Classes.css'
 import { Grid, Row, Col } from 'react-bootstrap';
-import Header from '../header/Header';
 import BoxOne from './containers/BoxOne';
 import BoxTwo from './containers/BoxTwo';
 
@@ -11,7 +10,6 @@ class Classes extends Component{
   render(){
     return(
       <div className="wrappClassDiv">
-        <Header />
         <Grid>
         <Row>
           <Col md={12} className="textDiv">

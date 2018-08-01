@@ -9,7 +9,7 @@ class Header extends Component{
   return(
     <span>
         <Image src= {require ("../../image/Header/headerEbla.jpg")}  className="headerBG" />
-        <Navbar inverse collapseOnSelect >
+        <Navbar inverse collapseOnSelect  className="marginHeader">
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#brand">WoW-React</a>
@@ -39,13 +39,11 @@ class Header extends Component{
                 </span>
               </NavItem>
               <NavDropdown eventKey={5} title="Прочее" id="basic-nav-dropdown">
-                <MenuItem eventKey={5.1}>Рейды</MenuItem>
+                <MenuItem eventKey={5.1} href="/guides">Гайды (PvE)</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={5.2}>Гайды</MenuItem>
+                <MenuItem eventKey={5.2} href="/mounts">Маунты</MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey={5.3} href="/mounts">Маунты</MenuItem>
-                <MenuItem divider />
-                <MenuItem eventKey={5.4} href="/addons">Аддоны</MenuItem>
+                <MenuItem eventKey={5.3} href="/addons">Аддоны</MenuItem>
               </NavDropdown>
             </Nav>
             <Nav pullRight>
@@ -54,10 +52,10 @@ class Header extends Component{
                 Авторизация
                 </span>
               </NavItem>
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="https://t.me/NeverGonaGiveYouUp">
                 <i className="fab fa-telegram"></i>
               </NavItem>
-              <NavItem eventKey={3} href="#">
+              <NavItem eventKey={3} href="https://github.com/VictorOrlov?tab=repositories">
                 <i className="fab fa-github"></i>
               </NavItem>
             </Nav>

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './Proff.css';
 import { Grid, Row, Col } from 'react-bootstrap';
-
-import Header from '../../components/header/Header';
 import AllProff from './AllProff';
 
  
@@ -18,7 +16,6 @@ class Proff extends Component{
   render(){
     return(
       <div className="wrappProffDiv">
-        <Header />
         <Grid>
           <Row>
             <Col md={12} className="ProffDiv" xsHidden>

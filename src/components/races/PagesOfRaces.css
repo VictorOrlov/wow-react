@@ -131,7 +131,7 @@
   margin-right: 13%;
   float: right;
   color:#fff;
-  background-image: url(../../image/Races/Race_Pages/Wow_Banner_1.png);
+  background-image: url(../../image/Buttons/Wow_Banner_1.png);
   background-color:transparent;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -382,6 +382,6 @@ bottom:50px;
 right:100px;
 display:none;
 text-indent:-9999px;
-background: url('../../image/Races/Race_Pages/up_button.png') no-repeat;
+background: url('../../image/Buttons/up_button.png') no-repeat;
 }
 

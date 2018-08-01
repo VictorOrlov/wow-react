@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Addons.css';
-import Header from '../header/Header';
 import { Grid, Row, Col, Table } from 'react-bootstrap';
 import AddonsTable from "./AddonsTable";
 
@@ -12,7 +11,6 @@ class Addons extends Component {
   render(){
     return(
       <div className="bgAddons">
-        <Header />
         <Grid> 
           <Row>
 
