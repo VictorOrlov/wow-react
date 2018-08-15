@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 import '../PagesOfClasses.css';
 
 
-class CarcassForEachClass extends Component{
+class PageForEachClass extends Component{
   render(){
-    
     return(
       <div className={this.props.class.main_bg}>
         <Row className="wrappClassesDiv">
@@ -51,4 +51,11 @@ class CarcassForEachClass extends Component{
   }
 };
 
-export default CarcassForEachClass;
+const mapStateToProps = (state, ownProps) => {
+  return{
+    class: state.cont_class[ownProps.match.params.id]
+  };
+}
+
+
+export default connect(mapStateToProps) (PageForEachClass);

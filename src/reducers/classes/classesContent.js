@@ -3,7 +3,7 @@ import React from 'react';
 export default function() {
   return{
     warrior:{
-      main_bg: ("bg_warrior"),
+      main_bg: ("bg_warrior upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_warrior"),
       name: "Воин",
       battleType: "Танк, боец",
@@ -51,7 +51,7 @@ export default function() {
         },
 
     hunter:{
-      main_bg: ("bg_hunter"),
+      main_bg: ("bg_hunter upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_hunter"),
       name: "Охотник",
       battleType: "Боец  ",
@@ -105,7 +105,7 @@ export default function() {
         },
     
     priest:{
-      main_bg: ("bg_priest"),
+      main_bg: ("bg_priest upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_priest"),
       name: "Жрец",
       battleType: "Лекарь, боец",
@@ -160,7 +160,7 @@ export default function() {
     } ,
     
     shaman:{
-      main_bg: ("bg_sham"),
+      main_bg: ("bg_sham upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_sham"),
       name: "Шаман",
       battleType: "Лекарь, боец",
@@ -212,7 +212,7 @@ export default function() {
     } ,
     
     warloc:{
-      main_bg: ("bg_warloc"),
+      main_bg: ("bg_warloc upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_warloc"),
       name: "Чернокнижник",
       battleType: "Боец",
@@ -267,7 +267,7 @@ export default function() {
     } ,
 
     druid:{
-      main_bg: ("bg_druid"),
+      main_bg: ("bg_druid upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_druid"),
       name: "Друид",
       battleType: "Танк, лекарь, боец",
@@ -318,7 +318,7 @@ export default function() {
     } ,
     
     paladin:{
-      main_bg: ("bg_paladin"),
+      main_bg: ("bg_paladin upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_paladin"),
       name: "Паладин",
       battleType: "Танк, лекарь, боец",
@@ -370,7 +370,7 @@ export default function() {
     } ,
     
     rogue:{
-      main_bg: ("bg_rogue"),
+      main_bg: ("bg_rogue upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_rogue"),
       name: "Разбойник",
       battleType: "Боец",
@@ -423,7 +423,7 @@ export default function() {
     } ,
     
     death_king:{
-      main_bg: ("bg_dk"),
+      main_bg: ("bg_dk upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_dk"),
       name: "Рыцарь смерти",
       battleType: "Танк, боец",
@@ -471,7 +471,7 @@ export default function() {
     } ,
     
     mage:{
-      main_bg: ("bg_mage"),
+      main_bg: ("bg_mage upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_mage"),
       name: "Маг",
       battleType: "Боец",
@@ -525,7 +525,7 @@ export default function() {
     } ,
     
     monah:{
-      main_bg: ("bg_monk"),
+      main_bg: ("bg_monk upper_and_lower_indents_for_class"),
       paper_bg: ("paperDesc pabg_monk"),
       name: "Монах",
       battleType: "Танк, лекарь, боец",

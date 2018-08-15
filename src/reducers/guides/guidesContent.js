@@ -1264,7 +1264,7 @@ export default function() {
       }
     },
 
-    sham:{
+    shaman:{
       name_class: "Шаман",
       bgGuide: ("bg_guide_sham content_style"),
       short_description: <p><strong>Краткое описание:</strong> Повелители стихий, обрушивают 

@@ -8,45 +8,13 @@ import Signup from './components/Login_and_Signup/Signup/Signup';
 import Proff from './components/professions/Proff';
 // Классы
 import Classes from './components/classes/Classes';
-import Warrior from './components/classes/allClasses/Warrior';
-import Hunter from './components/classes/allClasses/Hunter';
-import Priest from './components/classes/allClasses/Priest';
-import Sham from './components/classes/allClasses/Sham';
-import Warloc from './components/classes/allClasses/Warloc';
-import Druid from './components/classes/allClasses/Druid';
-import Paladin from './components/classes/allClasses/Paladin';
-import Rogue from './components/classes/allClasses/Rogue';
-import DeathKing from './components/classes/allClasses/DeathKing';
-import Mage from './components/classes/allClasses/Mage';
-import Monk from './components/classes/allClasses/Monk';
+import PageForEachClass from './components/classes/allClasses/PageForEachClass';
 // Рассы
 import Races from './components/races/Races';
-import Human from './components/races/allRaces/Human';
-import Dwarf from './components/races/allRaces/Dwarf';
-import Night_Elf from './components/races/allRaces/Night_Elf';
-import Gnome from './components/races/allRaces/Gnome';
-import Draeney from './components/races/allRaces/Draeney';
-import Worgen from './components/races/allRaces/Worgen';
-import Orc from './components/races/allRaces/Orc';
-import Undead from './components/races/allRaces/Undead';
-import Tauren from './components/races/allRaces/Tauren';
-import Troll from './components/races/allRaces/Troll';
-import Blood_Elf from './components/races/allRaces/Blood_Elf';
-import Goblin from './components/races/allRaces/Goblin';
-import Pandaren from './components/races/allRaces/Pandaren';
+import PageForEachRace from './components/races/allRaces/PageForEachRace';
 // Гайды
 import Guides from './components/guides/Guides';
-import GuideWarrior from "./components/guides/AllGuides/GuideWarrior";
-import GuidePaladin from "./components/guides/AllGuides/GuidePaladin";
-import GuideHunter from "./components/guides/AllGuides/GuideHunter";
-import GuideRogue from "./components/guides/AllGuides/GuideRogue";
-import GuidePriest from "./components/guides/AllGuides/GuidePriest";
-import GuideDK from "./components/guides/AllGuides/GuideDK";
-import GuideSham from "./components/guides/AllGuides/GuideSham";
-import GuideMage from "./components/guides/AllGuides/GuideMage";
-import GuideWarlock from "./components/guides/AllGuides/GuideWarlock";
-import GuideMonk from "./components/guides/AllGuides/GuideMonk";
-import GuideDruid from "./components/guides/AllGuides/GuideDruid";
+import PageForEachGuide from "./components/guides/AllGuides/PageForEachGuide";
 // Маунты
 import MountGuide from './components/mount_guide/MountGuide';
 // Аддоны
@@ -57,62 +25,28 @@ class BrowsRout extends Component{
       render(){
         return(
             <BrowserRouter >
-            <Switch>
-            {/* Домашняя страница и страницы регистрации/авторизации */}
-            <Route exact path="/" component={Home} />
-            <Route path='/login' component={Login} />
-            <Route path="/signup" component={Signup} />
-            {/* Классы и его ветви*/}
-            <Route exact path="/classes" component={Classes} />
-            <Route path="/classes/warrior" component={Warrior} />
-            <Route path="/classes/hunter" component={Hunter} />
-            <Route path="/classes/priest" component={Priest} />
-            <Route path="/classes/shaman" component={Sham} />
-            <Route path="/classes/warloc" component={Warloc} />
-            <Route path="/classes/druid" component={Druid} />
-            <Route path="/classes/paladin" component={Paladin} />
-            <Route path="/classes/rogue" component={Rogue} />
-            <Route path="/classes/death_king" component={DeathKing} />
-            <Route path="/classes/mage" component={Mage} />
-            <Route path="/classes/monk" component={Monk} />
-            {/* Профессии*/}
-            <Route path="/proff" component={Proff} />
-            {/*Рассы*/}
-            <Route exact path="/races" component={Races} />
-            <Route path="/races/human" component={Human} />
-            <Route path="/races/dwarf" component={Dwarf} />
-            <Route path="/races/night_elf" component={Night_Elf} />
-            <Route path="/races/gnome" component={Gnome} />
-            <Route path="/races/draeney" component={Draeney} />
-            <Route path="/races/worgen" component={Worgen} />
-            <Route path="/races/orc" component={Orc} />
-            <Route path="/races/undead" component={Undead} />
-            <Route path="/races/tauren" component={Tauren} />
-            <Route path="/races/troll" component={Troll} />
-            <Route path="/races/blood_elf" component={Blood_Elf} />
-            <Route path="/races/goblin" component={Goblin} />
-            <Route path="/races/pandaren" component={Pandaren} />
-            {/*Гайды*/}
-            <Route exact path="/guides" component={Guides} />
-            <Route path="/guides/warrior" component={GuideWarrior} />
-            <Route path="/guides/paladin" component={GuidePaladin} />
-            <Route path="/guides/hunter" component={GuideHunter} />
-            <Route path="/guides/rogue" component={GuideRogue} />
-            <Route path="/guides/priest" component={GuidePriest} />
-            <Route path="/guides/dk" component={GuideDK} />
-            <Route path="/guides/shaman" component={GuideSham} />
-            <Route path="/guides/mage" component={GuideMage} />
-            <Route path="/guides/warlock" component={GuideWarlock} />
-            <Route path="/guides/monk" component={GuideMonk} />
-            <Route path="/guides/druid" component={GuideDruid} />
-            {/*Маунты*/}
-            <Route path="/mounts" component={MountGuide} />
-            {/*Аддоны*/}
-            <Route path="/addons" component={Addons} />
-
-
-         </Switch>
-      </BrowserRouter>
+              <Switch>
+                {/* Домашняя страница и страницы регистрации/авторизации */}
+                <Route exact path="/" component={Home} />
+                <Route path='/login' component={Login} />
+                <Route path="/signup" component={Signup} />
+                {/* Классы и его ветви*/}
+                <Route exact path="/classes" component={Classes} />
+                <Route path="/classes/:id" component={PageForEachClass} />
+                {/* Профессии*/}
+                <Route path="/proff" component={Proff} />
+                {/*Рассы*/}
+                <Route exact path="/races" component={Races} />
+                <Route path="/races/:id" component={PageForEachRace} />
+                {/*Гайды*/}
+                <Route exact path="/guides" component={Guides} />
+                <Route path="/guides/:id" component={PageForEachGuide} />
+                {/*Маунты*/}
+                <Route path="/mounts" component={MountGuide} />
+                {/*Аддоны*/}
+                <Route path="/addons" component={Addons} />
+              </Switch>
+            </BrowserRouter>
         );
       }
 }

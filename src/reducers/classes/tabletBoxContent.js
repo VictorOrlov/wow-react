@@ -67,7 +67,7 @@ export default function() {
           text: 'Дисциплинированные ученики, наделенные острым умом, могут избрать путь мага. Тайное волшебство, доступное магу, сильно...'
         }, {
           id: "tablet_monk", 
-          link: '/classes/monk', 
+          link: '/classes/monah', 
           img: <Image src = {require ('../../image/Classes/ClassesTablet/monktablet.jpg')} />,
           caption: 'Монах', 
           text: 'Драчуны-монахи сражаются голыми руками. Они в совершенстве владеют старинными пандаренскими боевыми искусствами. Мона...'

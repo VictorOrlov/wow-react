@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, Tabs, Tab } from 'react-bootstrap';
 import '../PagesOfGuides.css';
+import { connect } from 'react-redux';
 
-
-class CarcassForEachGuides extends Component{
+class PageForEachGuide extends Component{
 	render(){
 		return(
-			<div className={this.props.item.bgGuide}>
+			<div className={this.props.guide.bgGuide}>
       <Grid>
         <Row>
           <Col md={10} sm={12} xs={12} className="text_center">
-            <h2>Гайд по классу: {this.props.item.name_class}</h2>
+            <h2>Гайд по классу: {this.props.guide.name_class}</h2>
           </Col>
           <Col md={2} sm={12} xs={12} >
             <a href="http://localhost:3000/guides">
@@ -21,59 +21,59 @@ class CarcassForEachGuides extends Component{
           </Col>
           <Col md={12} sm={12} xsHidden className="spirit"></Col>
         	<Col md={12}>
-        		{this.props.item.short_description}
+        		{this.props.guide.short_description}
         	</Col>
         	<Col>
         		<Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
-  						<Tab eventKey={1} title={this.props.item.tab_one.nameTab}>
+  						<Tab eventKey={1} title={this.props.guide.tab_one.nameTab}>
   						  <Col>
-  						  	<h4>{this.props.item.tab_one.name}</h4>
+  						  	<h4>{this.props.guide.tab_one.name}</h4>
 
   						  	<h3>Основы</h3>
-  						  	{this.props.item.tab_one.basics}
+  						  	{this.props.guide.tab_one.basics}
 
   						  	<h3>Выбор талантов</h3>
-  						  	{this.props.item.tab_one.talent_selection}
+  						  	{this.props.guide.tab_one.talent_selection}
 
   						  	<h3>Характеристики</h3>
-  						  	{this.props.item.tab_one.characteristics}
+  						  	{this.props.guide.tab_one.characteristics}
 
   						  	<h3>Базовая ротация</h3>
-  						  	{this.props.item.tab_one.basic_rotation}
+  						  	{this.props.guide.tab_one.basic_rotation}
   						  </Col>
   						</Tab>
-  						<Tab eventKey={2} title={this.props.item.tab_two.nameTab}>
+  						<Tab eventKey={2} title={this.props.guide.tab_two.nameTab}>
   						  <Col>
-  						  	<h4>{this.props.item.tab_two.name}</h4>
+  						  	<h4>{this.props.guide.tab_two.name}</h4>
 
   						  	<h3>Основы</h3>
-  						  	{this.props.item.tab_two.basics}
+  						  	{this.props.guide.tab_two.basics}
 
   						  	<h3>Выбор талантов</h3>
-  						  	{this.props.item.tab_two.talent_selection}
+  						  	{this.props.guide.tab_two.talent_selection}
 
   						  	<h3>Характеристики</h3>
-  						  	{this.props.item.tab_two.characteristics}
+  						  	{this.props.guide.tab_two.characteristics}
 
   						  	<h3>Базовая ротация</h3>
-  						  	{this.props.item.tab_two.basic_rotation}
+  						  	{this.props.guide.tab_two.basic_rotation}
   						  </Col>
   						</Tab>
-  						<Tab eventKey={3} title={this.props.item.tab_three.nameTab}>
+  						<Tab eventKey={3} title={this.props.guide.tab_three.nameTab}>
   						  <Col>
-  						  	<h4>{this.props.item.tab_three.name}</h4>
+  						  	<h4>{this.props.guide.tab_three.name}</h4>
 
   						  	<h3>Основы</h3>
-  						  	{this.props.item.tab_three.basics}
+  						  	{this.props.guide.tab_three.basics}
 
   						  	<h3>Выбор талантов</h3>
-  						  	{this.props.item.tab_three.talent_selection}
+  						  	{this.props.guide.tab_three.talent_selection}
 
   						  	<h3>Характеристики</h3>
-  						  	{this.props.item.tab_three.characteristics}
+  						  	{this.props.guide.tab_three.characteristics}
 
   						  	<h3>Базовая ротация</h3>
-  						  	{this.props.item.tab_three.basic_rotation}
+  						  	{this.props.guide.tab_three.basic_rotation}
   						  </Col>
   						</Tab>
 						</Tabs>
@@ -86,4 +86,10 @@ class CarcassForEachGuides extends Component{
 	}
 }
 
-export default CarcassForEachGuides;
+const mapStateToProps= (state, ownProps) =>{
+  return{
+    guide: state.cont_guide[ownProps.match.params.id]
+  }
+}
+
+export default connect (mapStateToProps) (PageForEachGuide);

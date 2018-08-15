@@ -10,6 +10,10 @@
 } 
 
 /*основной background для каждого из классов*/
+.upper_and_lower_indents_for_class{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
 .bg_warrior{
   background-image: url(../../image/Classes/Classes_Pages/warrior1.jpg);
   background-attachment: fixed;

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import '../PagesOfRaces.css';
+import { connect } from 'react-redux';
 
 
-class CarcassForEachRaces extends Component{
-
-  
+class PageForEachRace extends Component{
   render(){
     return(
       <div className={this.props.race.main_bg}>
@@ -126,7 +125,15 @@ class CarcassForEachRaces extends Component{
         </Row>
         <a href="#scroll" className="scrollup">Наверх</a>
       </div>
-      );
+    );
   }
 };
-export default CarcassForEachRaces;
+
+const mapStateToProps = (state, ownProps) => {
+  return{
+    race: state.cont_race[ownProps.match.params.id]
+  };
+}
+
+
+export default connect (mapStateToProps) (PageForEachRace);

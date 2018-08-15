@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap';
 export default function() {
 	return{
 		human:{
-			main_bg: ("bg_human"),
+			main_bg: ("bg_human upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_human"),
       name: "Люди",
       fraction: "Альянс",
@@ -117,7 +117,7 @@ export default function() {
     },
 
     dwarf:{
-      main_bg: ("bg_dwarf"),
+      main_bg: ("bg_dwarf upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_dwarf"),
       name: "Дворфы",
       fraction: "Альянс",
@@ -230,7 +230,7 @@ export default function() {
     },
 
     night_elf:{
-      main_bg: ("bg_night_elf"),
+      main_bg: ("bg_night_elf upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_night_elf"),
       name: "Ночные эльфы",
       fraction: "Альянс",
@@ -371,7 +371,7 @@ export default function() {
     },
 
     gnome:{
-      main_bg: ("bg_gnome"),
+      main_bg: ("bg_gnome upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_gnome"),
       name: "Гномы",
       fraction: "Альянс",
@@ -505,7 +505,7 @@ export default function() {
     },
 
     draeney:{
-      main_bg: ("bg_draeney"),
+      main_bg: ("bg_draeney upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_draeney"),
       name: "Дренеи",
       fraction: "Альянс",
@@ -629,7 +629,7 @@ export default function() {
     },
 
     worgen:{
-      main_bg: ("bg_worgen"),
+      main_bg: ("bg_worgen upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_worgen"),
       name: "Воргены",
       fraction: "Альянс",
@@ -740,7 +740,7 @@ export default function() {
     },
 
     orc:{
-      main_bg: ("bg_orc"),
+      main_bg: ("bg_orc upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_orc"),
       name: "Орки",
       fraction: "Орда",
@@ -844,7 +844,7 @@ export default function() {
     },
 
     undead:{
-      main_bg: ("bg_undead"),
+      main_bg: ("bg_undead upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_undead"),
       name: "Нежить",
       fraction: "Орда",
@@ -944,7 +944,7 @@ export default function() {
     },
 
     tauren:{
-      main_bg: ("bg_tauren"),
+      main_bg: ("bg_tauren upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_tauren"),
       name: "Таурены",
       fraction: "Орда",
@@ -1054,7 +1054,7 @@ export default function() {
     },
 
     troll:{
-      main_bg: ("bg_troll"),
+      main_bg: ("bg_troll upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_troll"),
       name: "Тролли",
       fraction: "Орда",
@@ -1169,7 +1169,7 @@ export default function() {
     },
 
     blood_elf:{
-      main_bg: ("bg_blood_elf"),
+      main_bg: ("bg_blood_elf upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_blood_elf"),
       name: "Эльфы крови",
       fraction: "Орда",
@@ -1289,7 +1289,7 @@ export default function() {
     },
 
     goblin:{
-      main_bg: ("bg_goblin"),
+      main_bg: ("bg_goblin upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_goblin"),
       name: "Гоблины",
       fraction: "Орда",
@@ -1437,7 +1437,7 @@ export default function() {
     },
 
     pandaren:{
-      main_bg: ("bg_pandaren"),
+      main_bg: ("bg_pandaren upper_and_lower_indents_for_race"),
       paper_bg: ("paperDesc pabg_pandaren"),
       name: "Пандарены",
       fraction: "Альянс, Орда или нейтралитет",
