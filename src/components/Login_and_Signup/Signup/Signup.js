@@ -71,7 +71,7 @@ class Signup extends Component {
               </Col>
 
               <Form horizontal>
-                <FormGroup controlId="formHorizontalEmail">
+                <FormGroup controlId="formHorizontalLogin">
                   <Col componentClass={ControlLabel} sm={2}>
                     Логин
                   </Col>
@@ -97,7 +97,7 @@ class Signup extends Component {
                   </Col>
                 </FormGroup>
 
-                <FormGroup controlId="formHorizontalPassword">
+                <FormGroup controlId="formHorizontalEmail">
                   <Col componentClass={ControlLabel} sm={2}>
                     Email
                   </Col>
@@ -110,7 +110,7 @@ class Signup extends Component {
                   </Col>
                 </FormGroup>
 
-                <FormGroup controlId="formHorizontalPassword">
+                <FormGroup controlId="formHorizontalName">
                   <Col componentClass={ControlLabel} sm={2}>
                     Имя
                   </Col>
