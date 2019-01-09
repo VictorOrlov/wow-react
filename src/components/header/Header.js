@@ -18,22 +18,22 @@ class Header extends Component{
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="http://localhost:3000/">
+              <NavItem eventKey={1} href="/">
                <span className="hover-underline-animation">
                 Главная
                 </span>
               </NavItem>
-              <NavItem eventKey={2} href="http://localhost:3000/classes">
+              <NavItem eventKey={2} href="/classes">
                <span className="hover-underline-animation">
                 Классы
                 </span>
               </NavItem>
-              <NavItem eventKey={3} href="http://localhost:3000/proff">
+              <NavItem eventKey={3} href="/proff">
                <span className="hover-underline-animation">
                 Профессии
                 </span>
               </NavItem>
-              <NavItem eventKey={4} href="http://localhost:3000/races">
+              <NavItem eventKey={4} href="/races">
                <span className="hover-underline-animation">
                 Расы
                 </span>
@@ -47,7 +47,7 @@ class Header extends Component{
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={2} href="http://localhost:3000/login">
+              <NavItem eventKey={2} href="/login">
                <span className="hover-underline-animation">
                 Авторизация
                 </span>
